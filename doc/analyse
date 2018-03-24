@@ -1,0 +1,62 @@
+Nom : Ultra Gaming
+
+Base de donnée:
+
+Jeux:
+	idJeux,
+	Nom,
+	Editeur,
+	Plateforme,
+	Prix,
+	Pegi,
+	Genre,
+	Date de parution;
+
+Clients:
+	idUsers,
+	Pseudo,
+	E-mail,
+	Mot de passe,
+	Adresse,
+	Age,
+	Genre;
+
+Commandes:
+	NumVente,
+	Pseudo,
+	Nom,
+	Prix,
+	Date;
+
+Admins:
+	idAdmin,
+	Pseudo,
+	Mot de passe,
+	E-mail,
+
+Site:
+
+Menu:
+
+-Acceuil
+-Bibliothèque
+-Jeux
+-Support
+-Admin (apparaît seulement pour user avec grade admin)
+
+Connexion,
+Panier,
+Barre de recherche!
+
+Contenu:
+
+	haut: Nouveauté (menu déroulant)
+	gauche: Menu (avec filtre)
+	reste: offre, ...
+
+Footer:
+copyright
+connexion admin
+
+Info:
+https://trello.com/
