@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  width: 100%;
+  height: 110px;
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Titre :*/
+
+#title {
+  float: left;
+  margin: 0;
+  padding: 0 0 0 60px;
+  height: 50px;
+}
+
+#aTitle {
+  color: #FF8C00;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/*Login :*/
+
+#login {
+  margin: 0 0 0 75%;
+  padding: 10px 0 0 0;
+  width: 25%;
+  height: 50px;
+}
+
+#imgLogin {
+  float: left;
+  padding: 0 10px 0 0;
+  width: 50px;
+  height: 50px;
+}
+
+.aLogin {
+  font-size: 15px;
+  color: white;
+}
+
+/*Menu :*/
+
+#menu {
+  float: left;
+  margin: 10px 0 0 0;
+  width: auto;
+  height: 40px;
+}
+
+#ulMenu {
+  margin: 0 0 0 0;
+  padding: 0 0 0 50px;
+  overflow: hidden;
+}
+
+.liMenu {
+  float: left;
+}
+
+.aMenu {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*Rechercher :*/
+
+#search {
+  margin: 0 0 0 74%;
+  padding: 20px 0 0 0;
+  width: 25%;
+  height: 30px;
+}
+
+.colorWhite {
+  color: white;
+}

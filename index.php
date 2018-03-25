@@ -1,10 +1,5 @@
 <?php
-$path = 'projectfinal.local/';
-
-define('URL','//'.$_SERVER['HTTP_HOST'],$path);
-
-$uri = str_replace($path, "", $_SERVER['REQUEST_URI']);
-$uri = parse_url($uri, PHP_URL_PATH);
+$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 $segments = array_filter(explode('/', $uri));
 
