@@ -3,98 +3,243 @@
   padding: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+@media screen and (min-width: 800px) and (max-width: 1360px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    margin: 0;
+    width: 100%;
+    height: 110px;
+    background-color: black;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /*Titre :*/
+
+  #title {
+    float: left;
+    margin: 0;
+    padding: 5px 0 0 60px;
+    height: 50px;
+  }
+
+  #aTitle {
+    color: #FF8C00;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  /*Login :*/
+
+  #login {
+    margin: 0 0 0 75%;
+    padding: 10px 0 0 0;
+    width: 25%;
+    height: 50px;
+  }
+
+  #imgLogin {
+    float: left;
+    padding: 0 10px 0 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .aLogin {
+    font-size: 15px;
+    color: white;
+  }
+
+  .aLogin:hover {
+    color: #FF8C00;
+  }
+
+  /*Menu :*/
+
+  #menu {
+    float: left;
+    margin: 5px 0 0 50px;
+    width: auto;
+    height: 45px;
+  }
+
+  #ulMenu {
+    overflow: hidden;
+  }
+
+  .liMenu {
+    float: left;
+  }
+
+  .aMenu {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .aMenu:hover {
+    border-bottom: 5px solid #FF8C00;
+    padding: 10px 20px 7px 20px;
+  }
+
+  /*Rechercher :*/
+
+  #search {
+    margin: 0 0 0 74%;
+    padding: 20px 0 0 0;
+    width: 25%;
+    height: 30px;
+  }
+
+  #iSearch {
+    float: left;
+    width: 60%;
+    height: 20px
+  }
+
+  #bottunSearch {
+    float: left;
+    border: none;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    background-color: white;
+  }
+
+  .colorWhite {
+    color: white;
+  }
 }
 
-header {
-  margin: 0;
-  width: 100%;
-  height: 110px;
-  background-color: black;
-}
+@media screen and (min-width: 1361px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
-ul {
-  list-style-type: none;
-}
+  header {
+    margin: auto;
+    width: 80%;
+    height: 150px;
+    background-color: black;
+  }
 
-a {
-  text-decoration: none;
-}
+  ul {
+    list-style-type: none;
+  }
 
-/*Titre :*/
+  a {
+    text-decoration: none;
+  }
 
-#title {
-  float: left;
-  margin: 0;
-  padding: 0 0 0 60px;
-  height: 50px;
-}
+  /*Titre :*/
 
-#aTitle {
-  color: #FF8C00;
-  font-size: 50px;
-  font-weight: bold;
-}
+  #title {
+    float: left;
+    margin: 0;
+    padding: 5px 0 0 60px;
+    height: 70px;
+  }
 
-/*Login :*/
+  #aTitle {
+    color: #FF8C00;
+    font-size: 70px;
+    font-weight: bold;
+  }
 
-#login {
-  margin: 0 0 0 75%;
-  padding: 10px 0 0 0;
-  width: 25%;
-  height: 50px;
-}
+  /*Login :*/
 
-#imgLogin {
-  float: left;
-  padding: 0 10px 0 0;
-  width: 50px;
-  height: 50px;
-}
+  #login {
+    margin: 0 0 0 75%;
+    padding: 10px 0 0 0;
+    width: 25%;
+    height: 70px;
+  }
 
-.aLogin {
-  font-size: 15px;
-  color: white;
-}
+  #imgLogin {
+    float: left;
+    padding: 0 10px 0 0;
+    width: 70px;
+    height: 70px;
+  }
 
-/*Menu :*/
+  .aLogin {
+    font-size: 20px;
+    color: white;
+  }
 
-#menu {
-  float: left;
-  margin: 10px 0 0 0;
-  width: auto;
-  height: 40px;
-}
+  .aLogin:hover {
+    color: #FF8C00;
+  }
 
-#ulMenu {
-  margin: 0 0 0 0;
-  padding: 0 0 0 50px;
-  overflow: hidden;
-}
+  /*Menu :*/
 
-.liMenu {
-  float: left;
-}
+  #menu {
+    float: left;
+    margin: 10px 0 0 50px;
+    width: auto;
+    height: 60px;
+  }
 
-.aMenu {
-  display: block;
-  padding: 10px 20px;
-  color: white;
-  font-size: 20px;
-  text-align: center;
-}
+  #ulMenu {
+    overflow: hidden;
+  }
 
-/*Rechercher :*/
+  .liMenu {
+    float: left;
+  }
 
-#search {
-  margin: 0 0 0 74%;
-  padding: 20px 0 0 0;
-  width: 25%;
-  height: 30px;
-}
+  .aMenu {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
 
-.colorWhite {
-  color: white;
+  .aMenu:hover {
+    border-bottom: 5px solid #FF8C00;
+    padding: 10px 20px 11px 20px;
+  }
+
+  /*Rechercher :*/
+
+  #search {
+    margin: 0 0 0 74%;
+    padding: 20px 0 0 0;
+    width: 25%;
+    height: 30px;
+  }
+
+  #iSearch {
+    float: left;
+    width: 70%;
+    height: 25px;
+    font-size: 18px;
+  }
+
+  #bottunSearch {
+    float: left;
+    border: none;
+    cursor: pointer;
+    height: 29px;
+    width: 29px;
+    background-color: white;
+  }
+
+  .colorWhite {
+    color: white;
+  }
 }

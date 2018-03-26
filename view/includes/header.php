@@ -1,8 +1,8 @@
 <header>
+  <div id="title"><a href="" id="aTitle"><span class="colorWhite">Ultra</span> Gaming</a></div>
   <div>
-    <div id="title"><a href="" id="aTitle"><span class="colorWhite">Ultra</span> Gaming</a></div>
     <div id="login">
-      <img src="#" id="imgLogin"/>
+      <a href="#"><img src="../../css/image/icon.png" id="imgLogin"/></a>
       <form>
         <ul id="ulLogin">
           <li class="liLogin"><a href="#" class="aLogin">S'identifier</a></li>
@@ -20,8 +20,7 @@
     </div>
     <div id="search">
       <form>
-        <input type="text" placeholder="Recherche..." />
-        <input type="submit" value="Recherche" />
+        <input type="text" placeholder="Recherche..." id="iSearch"/><input type="image" src="../../css/image/loupe.png" alt="submit" id="bottunSearch"/>
       </form>
     </div>
   </div>
