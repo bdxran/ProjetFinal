@@ -3,17 +3,17 @@ $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 $segments = array_filter(explode('/', $uri));
 
-if (count($segments) == 0 or $segments[0] == 'index') {
+if (count($segments) == 0 or $segments[1] == 'index') {
     $file = 'welcome';
 } else {
-    $file = $segments[0];
+    $file = $segments[1];
 }
 
-$controller = 'controller/'.$file.'.php';
+$controller = 'controllers/'.$file.'.php';
 
 if (count($segments) <= 1 and file_exists($controller)) {
     include $controller;
 } else {
-    include 'controller/404.php';
+    include('controllers/404.php');
 }
 ?>

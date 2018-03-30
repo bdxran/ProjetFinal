@@ -1,0 +1,31 @@
+@media screen and (min-width: 800px) and (max-width: 1360px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    color: white;
+    background-color: black;
+  }
+
+  #copyright {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1361px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    color: white;
+    background-color: black;
+  }
+
+  #copyright {
+    text-align: center;
+  }
+}
