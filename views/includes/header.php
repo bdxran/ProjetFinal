@@ -2,12 +2,16 @@
   <div id="title"><a href="welcome" id="aTitle"><span class="colorWhite">Ultra</span> Gaming</a></div>
   <div>
     <div id="login">
-      <?php if(!empty($_SESSION['pseudo'])) { ?>
+      <?php if(!empty($_SESSION['pseudo']) || !empty($_SESSION['admin'])) {?>
         <a href="login"><img src="../../css/image/icon.png" id="imgLogin"/></a>
         <form>
           <ul id="ulLogin">
-            <li class="liLogin"><a href="#" class="aLogin"><?=$_SESSION['pseudo'] ?></a></li>
-            <li class="liLogin"><a href="logout"  class="aLogin">Déconnecter</a></li>
+            <?php if(!empty($_SESSION['admin'])) {
+              echo '<li class="liLogin"><a href="#" class="aLogin">'.$_SESSION['admin'].'</a></li>';
+            } else {
+              echo '<li class="liLogin"><a href="#" class="aLogin">'.$_SESSION['pseudo'].'</a></li>';
+            } ?>
+            <li class="liLogin"><a href="logout" class="aLogin">Déconnecter</a></li>
           </ul>
         </form>
       <?php } else { ?>
@@ -25,7 +29,7 @@
         <li class="liMenu"><a href="#" class="aMenu">Jeux</a></li>
         <li class="liMenu"><a href="#" class="aMenu">Bibliothèque</a></li>
         <li class="liMenu"><a href="#" class="aMenu">Support</a></li>
-        <li class="liMenu"><a href="#" class="aMenu">Admin</a></li>
+        <?php if(!empty($_SESSION['admin'])) echo '<li class="liMenu"><a href="panneau_administration" class="aMenu">Admin</a></li>'?>
       </ul>
     </div>
     <div id="search">
