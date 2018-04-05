@@ -5,7 +5,7 @@
           <title><?=$title ?></title>
     </head>
     <body>
-        <form method="get">
+        <form method="post">
             <fieldset>
                 <legend>Edit</legend>
 

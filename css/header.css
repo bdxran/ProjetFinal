@@ -7,13 +7,14 @@
   body {
     margin: 0;
     padding: 0;
+    background-color: #eaeaea;
   }
 
   header {
     margin: 0;
     width: 100%;
     height: 110px;
-    background-color: black;
+    background-color: #151515;
   }
 
   ul {
@@ -57,7 +58,7 @@
 
   .aLogin {
     font-size: 15px;
-    color: white;
+    color: #eaeaea;
   }
 
   .aLogin:hover {
@@ -84,7 +85,7 @@
   .aMenu {
     display: block;
     padding: 10px 20px;
-    color: white;
+    color: #eaeaea;
     font-size: 20px;
     text-align: center;
   }
@@ -120,7 +121,7 @@
     float: right;
     width: 80%;
     height: 22px;
-    color: white;
+    color: #eaeaea;
     background: none;
     border: none;
     border-bottom: 2px solid #FF8C00;
@@ -134,7 +135,7 @@
   }
 
   .colorWhite {
-    color: white;
+    color: #eaeaea;
   }
 }
 
@@ -143,13 +144,14 @@
     width: 80%;
     margin: auto;
     padding: 0;
+    background-color: #eaeaea;
   }
 
   header {
     margin: auto;
     width: 100%;
     height: 150px;
-    background-color: black;
+    background-color: #151515;
   }
 
   ul {
@@ -193,7 +195,7 @@
 
   .aLogin {
     font-size: 20px;
-    color: white;
+    color: #eaeaea;
   }
 
   .aLogin:hover {
@@ -220,7 +222,7 @@
   .aMenu {
     display: block;
     padding: 10px 20px;
-    color: white;
+    color: #eaeaea;
     font-size: 30px;
     text-align: center;
   }
@@ -245,7 +247,7 @@
     width: 40%;
     height: 27px;
     font-size: 18px;
-    color: white;
+    color: #eaeaea;
     background: none;
     border: none;
     border-bottom: 2px solid #FF8C00;
@@ -257,7 +259,7 @@
     float: right;
     width: 80%;
     height: 27px;
-    color: white;
+    color: #eaeaea;
     background: none;
     border: none;
     border-bottom: 2px solid #FF8C00;
@@ -271,7 +273,7 @@
   }
 
   .colorWhite {
-    color: white;
+    color: #eaeaea;
   }
 }
 

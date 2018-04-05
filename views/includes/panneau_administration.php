@@ -21,7 +21,7 @@
         <td><?=$result['mail']?></td>
     		<td>
           <form action="edit" method="get">
-            <input type="hidden" name="id" value="<?=$result['id']?>">
+            <input type="hidden" name="id" value="<?=$result['anum']?>">
             <input type="submit" value="Modifier">
           </form>
   <?php

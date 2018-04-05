@@ -1,12 +1,12 @@
 @media screen and (min-width: 800px) and (max-width: 1360px) {
   footer {
-    position: absolute;
+    float: left;
     bottom: 0;
     width: 100%;
     margin: auto;
     padding: 0;
-    color: white;
-    background-color: black;
+    color: #eaeaea;
+    background-color: #151515;
   }
 
   #copyright {
@@ -16,13 +16,13 @@
 
 @media screen and (min-width: 1361px) {
   footer {
-    position: absolute;
+    float: left;
     bottom: 0;
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 0;
-    color: white;
-    background-color: black;
+    color: #eaeaea;
+    background-color: #151515;
   }
 
   #copyright {

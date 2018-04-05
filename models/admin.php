@@ -35,6 +35,8 @@
   function setAdmin($id, $password) {
     require_once("include/db.php");
 
+    $password=sha1($password);
+
 		$bdd = db_connect();
 
 		$req = $bdd->prepare('UPDATE Admin SET password=? WHERE anum = ?');

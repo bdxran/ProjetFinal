@@ -1,31 +1,19 @@
 <?php
-  include('models/admin.php');
-
   session_start();
 
-  if(empty($id)){
-    $id=$_GET['id'];
-  }
+  require_once('models/admin.php');
 
-  $result = getLogin($id);
+  if(!empty($_POST['password']) && !empty($_POST['confirmPassword'])) {
+    if($_POST['password'] == $_POST['confirmPassword']) {
 
-  if($_GET['password'] == $_GET['confirmPassword']) {
+      setAdmin($_GET['id'], $_POST['password']);
 
-    if(!empty($req)) {
-      $errorMessage = 'Login déjà pris!';
-
-      header('Location: edit?id='.$id);
+      header('Location: panneau_administration');
     } else {
-      $password=sha1($_GET['password']);
-
-      setAdmin($req['anum'], $password);
-
-      header('Location: panneau_administratif');
+      $errMsg = 'Les mots de passe ne sont pas identique!';
     }
-  } elseif($_GET['password']!=$_GET['confirmPassword']) {
-    $errorMessage = 'Mot de passe différent!';
-
-    header('Location: edit?id='.$id);
+  } else {
+    $errMsg = 'Veuillez remplir les champs svp!';
   }
 
   $title = 'Editer profil';
