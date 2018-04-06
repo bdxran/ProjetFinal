@@ -1,3 +1,3 @@
 <?php
-  include("includes/layout.php")
+  include("layouts/layout.php")
 ?>

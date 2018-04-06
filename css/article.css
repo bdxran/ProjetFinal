@@ -1,0 +1,40 @@
+#article_window {
+  float: right;
+  margin: 5%;
+  width: 16%;
+  border: 2px solid #151515;
+  background-color: #4A4A4A;
+}
+
+.title_window {
+  padding: 5px 0px 5px 10px;
+  height: 25px;
+  background-color: #151515;
+  font-size: 20px;
+  color: #FF8C00;
+}
+
+.content_article {
+  margin: 5px 5px 5px 5px;
+  height: 30px;
+}
+
+.design_button {
+  width: 100px;
+  height: 30px;
+  background-color: #151515;
+  border: 2px solid #151515;
+  border-radius: 5px;
+}
+
+.lien_button {
+  font-size: 15px;
+  font-weight: bold;
+  color: #EAEAEA;
+}
+
+.lien_button:hover {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FF8C00;
+}

@@ -1,3 +1,3 @@
 <?php
-  include('includes/layoutAdmin.php');
+  include('layouts/layoutAdmin.php');
 ?>

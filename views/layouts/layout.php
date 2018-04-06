@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="../../css/footer.css"></link>
   </head>
   <body>
-    <?php include('header.php') ?>
-    <?php include('content.php') ?>
-    <?php include('footer.php') ?>
+    <?php include('includes/header.php') ?>
+    <?php include('includes/content.php') ?>
+    <?php include('includes/footer.php') ?>
   </body>
 </html>
