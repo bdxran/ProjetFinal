@@ -9,7 +9,7 @@
   <body>
     <div id="form">
       <h1>Ajouter Article</h1>
-      <form method="post">
+      <form method="post" enctype="multipart/form-data">
         <ul class="list">
           <li class="ligne_list"><input type="text" name="nameGame" value="Nom" onfocus="if (this.value=='Nom') this.value=''" class="input" required/>
           <input type="text" name="editeur" value="Editeur" onfocus="if (this.value=='Editeur') this.value=''" class="input" required/></li>
@@ -37,7 +37,7 @@
             </select>
           </li>
           <li class="title_list"><span>Genre :</span></li>
-          <li class="title_list"></li>
+          <li class="title_list"><span>Jacket :</span></li>
           <li class="ligne_list">
             <select name="genre" class="input" required>
               <option value="action">action</option>
@@ -49,6 +49,7 @@
               <option value="role">rôle</option>
               <option value="tir">tir</option>
             </select>
+            <input type="file" id="jacket" name="jacket" accept="image/*" class="input" />
           </li>
 
           <li class="title_list"><span>Description :</span></li>

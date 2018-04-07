@@ -1,11 +1,11 @@
 <?php
-  function add($nameGame,$editeur,$prix,$date_parution,$plateform,$pegi,$genre,$description) {
+  function add($nameGame,$editeur,$prix,$date_parution,$plateform,$pegi,$genre,$jacket,$description) {
     require_once('include/db.php');
 
     $bdd = db_connect();
 
-    $req = $bdd->prepare('INSERT INTO Game (nameGame,editeur,plateform,prix,pegi,genre,date_parution,description) VALUES (?,?,?,?,?,?,?,?)');
-    $req->execute(array($nameGame,$editeur,$plateform,$prix,$pegi,$genre,$date_parution,$description));
+    $req = $bdd->prepare('INSERT INTO Game (nameGame,editeur,plateform,prix,pegi,genre,jacket,date_parution,description) VALUES (?,?,?,?,?,?,?,?,?)');
+    $req->execute(array($nameGame,$editeur,$plateform,$prix,$pegi,$genre,$jacket,$date_parution,$description));
 
     return $req;
   }
