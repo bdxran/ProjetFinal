@@ -5,11 +5,6 @@
           <title><?=$title ?></title>
     </head>
     <body>
-        <?php
-            if(isset($errMsg)) {
-                echo '<font color="red">'.$errMsg.'</font>';
-            }
-        ?>
         <form method="post">
             <fieldset>
                 <legend>Inscrivez-vous</legend>
@@ -48,5 +43,11 @@
                 <a href="welcome"><input type="button" name="retour" value="Retour" /></a>
             </fieldset>
         </form>
+        <script language="javascript">
+          var error = '<?php echo $errMsg ?>'
+          if(error != "") {
+            alert(error);
+          }
+       </script>
     </body>
 </html>

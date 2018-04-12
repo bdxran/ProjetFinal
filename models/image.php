@@ -19,4 +19,15 @@
       $errMsg = 'Erreur! impossible d\'ajouter l\'image';
     }
   }
+
+  function search_image($plateform){
+    require_once('include/db.php');
+
+    $bdd = db_connect();
+
+    $req = $bdd->prepare('SELECT jacket FROM Game WHERE NOW() >= date_parution and plateform = ? ORDER BY date_parution DESC');
+    $req->execute(array($plateform));
+    
+    return $req;
+  }
  ?>

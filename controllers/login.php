@@ -17,14 +17,13 @@
 
         exit;
       } else {
-        $errMsg = 'Le mot de passe est incorrect!';
+        $errMsg = 'Le mot de passe est incorrect ou vide!';
       }
     } else {
-      $errMsg = 'Le pseudo est incorrect!';
+      $errMsg = 'Le pseudo est incorrect ou vide!';
     }
-  } else {
-    $errMsg = 'Veuilliez remplir les champs!';
   }
+
 
   $title = "Connection";
 

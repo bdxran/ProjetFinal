@@ -8,15 +8,6 @@
         <form method="post">
             <fieldset>
                 <legend>Edit</legend>
-
-                <?php
-                // Rencontre-t-on une erreur ?
-                if(!empty($errMsg))
-                {
-                  echo '<font color="red">'.$errMsg.'</font>';
-                }
-                ?>
-
                 <p>
                 <label for="password">Mot de passe: </label>
                 <input type="password" name="password" required />
@@ -31,6 +22,11 @@
                 </p>
             </fieldset>
         </form>
-
+        <script language="javascript">
+          var error = '<?php echo $errMsg ?>'
+          if(error != "") {
+            alert(error);
+          }
+       </script>
     </body>
 </html>

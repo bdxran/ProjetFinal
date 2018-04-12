@@ -4,10 +4,27 @@
       <h1>Jeux Pc</h1><a href="#" class="redirection_window">+</a>
     </div>
     <ul class="mise_page">
-      <li class="articleLeft"><a href="#" class="lien"><img src="../../css/image/farcry-5-pc.jpg" class="jacket"></a></li>
-      <li class="articleMiddle"><a href="#" class="lien"><img src="../../css/image/gta-5-pc.jpg" class="jacket"></a></li>
-      <li class="articleMiddle"><a href="#" class="lien"><img src="../../css/image/thewitcher-3-pc.jpg" class="jacket"></a></li>
-      <li class="articleRigth"><a href="#" class="lien"><img src="../../css/image/assetocorsa-pc.jpg" class="jacket"></a></li>
+      <?php
+        require_once('models/image.php');
+
+        $i=0;
+        $plateform = 'pc';
+        $repertoire = 'css/image/';
+        $req = search_image($plateform);
+
+        while($result = $req->fetch()) {
+          if($i == 0){
+            echo '<li class="articleLeft"><a href="#" class="lien"><img src='.$repertoire.$result['jacket'].' class="jacket"></a></li>';
+          } elseif ($i <= 2) {
+            echo '<li class="articleMiddle"><a href="#" class="lien"><img src='.$repertoire.$result['jacket'].' class="jacket"></a></li>';
+          } else {
+            echo '<li class="articleRigth"><a href="#" class="lien"><img src='.$repertoire.$result['jacket'].' class="jacket"></a></li>';
+            break;
+          }
+
+          $i++;
+        }
+       ?>
     </ul>
   </section>
   <section class="window">
@@ -15,10 +32,27 @@
       <h1>Jeux Ps4</h1><a href="#" class="redirection_window">+</a>
     </div>
     <ul class="mise_page">
-      <li class="articleLeft"><a href="#" class="lien"><img src="../../css/image/farcry-5-pc.jpg" class="jacket"></a></li>
-      <li class="articleMiddle"><a href="#" class="lien"><img src="../../css/image/gta-5-pc.jpg" class="jacket"></a></li>
-      <li class="articleMiddle"><a href="#" class="lien"><img src="../../css/image/thewitcher-3-pc.jpg" class="jacket"></a></li>
-      <li class="articleRigth"><a href="#" class="lien"><img src="../../css/image/assetocorsa-pc.jpg" class="jacket"></a></li>
+      <?php
+        require_once('models/image.php');
+
+        $i=0;
+        $plateform = 'ps4';
+        $repertoire = 'css/image/';
+        $req = search_image($plateform);
+
+        while($result = $req->fetch()) {
+          if($i == 0){
+            echo '<li class="articleLeft"><a href="#" class="lien"><img src='.$repertoire.$result['jacket'].' class="jacket"></a></li>';
+          } elseif ($i <= 2) {
+            echo '<li class="articleMiddle"><a href="#" class="lien"><img src='.$repertoire.$result['jacket'].' class="jacket"></a></li>';
+          } else {
+            echo '<li class="articleRigth"><a href="#" class="lien"><img src='.$repertoire.$result['jacket'].' class="jacket"></a></li>';
+            break;
+          }
+
+          $i++;
+        }
+       ?>
     </ul>
   </section>
   <section class="window">
@@ -26,10 +60,27 @@
       <h1>Jeux Xbox</h1><a href="#" class="redirection_window">+</a>
     </div>
     <ul class="mise_page">
-      <li class="articleLeft"><a href="#" class="lien"><img src="../../css/image/farcry-5-pc.jpg" class="jacket"></a></li>
-      <li class="articleMiddle"><a href="#" class="lien"><img src="../../css/image/gta-5-pc.jpg" class="jacket"></a></li>
-      <li class="articleMiddle"><a href="#" class="lien"><img src="../../css/image/thewitcher-3-pc.jpg" class="jacket"></a></li>
-      <li class="articleRigth"><a href="#" class="lien"><img src="../../css/image/assetocorsa-pc.jpg" class="jacket"></a></li>
+      <?php
+        require_once('models/image.php');
+
+        $i=0;
+        $plateform = 'xbox';
+        $repertoire = 'css/image/';
+        $req = search_image($plateform);
+
+        while($result = $req->fetch()) {
+          if($i == 0){
+            echo '<li class="articleLeft"><a href="#" class="lien"><img src='.$repertoire.$result['jacket'].' class="jacket"></a></li>';
+          } elseif ($i <= 2) {
+            echo '<li class="articleMiddle"><a href="#" class="lien"><img src='.$repertoire.$result['jacket'].' class="jacket"></a></li>';
+          } else {
+            echo '<li class="articleRigth"><a href="#" class="lien"><img src='.$repertoire.$result['jacket'].' class="jacket"></a></li>';
+            break;
+          }
+
+          $i++;
+        }
+       ?>
     </ul>
   </section>
   <section class="window">
@@ -37,10 +88,27 @@
       <h1>Jeux Switch</h1><a href="#" class="redirection_window">+</a>
     </div>
     <ul class="mise_page">
-      <li class="articleLeft"><a href="#" class="lien"><img src="../../css/image/farcry-5-pc.jpg" class="jacket"></a></li>
-      <li class="articleMiddle"><a href="#" class="lien"><img src="../../css/image/gta-5-pc.jpg" class="jacket"></a></li>
-      <li class="articleMiddle"><a href="#" class="lien"><img src="../../css/image/thewitcher-3-pc.jpg" class="jacket"></a></li>
-      <li class="articleRigth"><a href="#" class="lien"><img src="../../css/image/assetocorsa-pc.jpg" class="jacket"></a></li>
+      <?php
+        require_once('models/image.php');
+
+        $i=0;
+        $plateform = 'switch';
+        $repertoire = 'css/image/';
+        $req = search_image($plateform);
+
+        while($result = $req->fetch()) {
+          if($i == 0){
+            echo '<li class="articleLeft"><a href="#" class="lien"><img src='.$repertoire.$result['jacket'].' class="jacket"></a></li>';
+          } elseif ($i <= 2) {
+            echo '<li class="articleMiddle"><a href="#" class="lien"><img src='.$repertoire.$result['jacket'].' class="jacket"></a></li>';
+          } else {
+            echo '<li class="articleRigth"><a href="#" class="lien"><img src='.$repertoire.$result['jacket'].' class="jacket"></a></li>';
+            break;
+          }
+
+          $i++;
+        }
+       ?>
     </ul>
   </section>
 </div>

@@ -30,11 +30,12 @@
         <a href="panneau_administration"><input type="button" name="retour" value="Retour" class="button"/></a>
         </p>
       </form>
-      <?php
-      if(!empty($errMsg)) {
-        echo '<font color="red">'.$errMsg.'</font>';
-      }
-      ?>
+      <script language="javascript">
+        var error = '<?php echo $errMsg ?>'
+        if(error != "") {
+          alert(error);
+        }
+     </script>
     </div>
   </body>
 </html>

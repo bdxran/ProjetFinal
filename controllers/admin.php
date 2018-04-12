@@ -25,6 +25,11 @@
   } else {
     $errMsg = 'Veuilliez remplir les champs!';
   }
-
-  include('views/admin.php');
 ?>
+  <script language="javascript">
+    var error = '<?php echo $errMsg ?>'
+    if(error != "") {
+      alert(error);
+      window.location.href = "http://projetfinal.local";
+    }
+  </script>

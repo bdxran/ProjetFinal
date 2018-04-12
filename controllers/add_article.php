@@ -5,70 +5,55 @@
   session_start();
 
   if(!empty($_SESSION['admin'])) {
+      $title = 'Ajouter article';
 
-    if(!empty($_POST['nameGame'])){
-      if(!empty($_POST['editeur'])) {
-        if(!empty($_POST['prix'])) {
-          if(!empty($_POST['date_parution'])) {
-            if(!empty($_POST['pegi'])) {
-              if(!empty($_POST['plateform'])) {
-                if(!empty($_POST['genre'])) {
-                  if(!empty($_FILES['jacket']['name'])) {
-                    $repertoire = 'css/image/';
-                    $file = $repertoire.basename($_FILES['jacket']['name']);
-                    $upload = true;
+      if($_SERVER['REQUEST_METHOD'] == 'POST') {
+        if(!empty($_POST['nameGame']) && $_POST['nameGame'] != "Nom"){
+          if(!empty($_POST['editeur']) && $_POST['editeur'] != "Editeur") {
+            if(!empty($_POST['prix'])) {
+              if(!empty($_POST['date_parution'])) {
+                if(!empty($_POST['pegi'])) {
+                  if(!empty($_POST['plateform'])) {
+                    if(!empty($_POST['genre'])) {
+                      if(!empty($_FILES['jacket']['name'])) {
+                        verif_image($_FILES['jacket']['tmp_name'],$_FILES['jacket']['name']);
+                        if(!empty($_POST['description'])) {
+                          $errMsg = add($_POST['nameGame'],$_POST['editeur'],$_POST['prix'],$_POST['date_parution'],$_POST['plateform'],$_POST['pegi'],$_POST['genre'],$_FILES['jacket']['name'],$_POST['description']);
 
-                    if(file_exists($file)) {
-                      $errMsg = 'Le fichier existe déjà!';
-
-                      $upload = false;
-                    }
-
-                    if($upload == true) {
-                      if (move_uploaded_file($_FILES['jacket']['tmp_name'], $file)) {
-                          if(!empty($_POST['description'])) {
-                            $errMsg = add($_POST['nameGame'],$_POST['editeur'],$_POST['prix'],$_POST['date_parution'],$_POST['plateform'],$_POST['pegi'],$_POST['genre'],$_FILES['jacket']['name'],$_POST['description']);
-
-                            header('Location: panneau_administration');
-                          } else {
-                            $errMsg = 'Veuillez remplir la description';
-                          }
+                          header('Location: panneau_administration');
                         } else {
-                            $errMsg = "Erreur inconnue! Merci de retenter l'ajout plus tard ou de contacter l'administrateur.";
+                          $errMsg = 'Veuillez remplir la description';
                         }
+                      } else {
+                        $errMsg = 'Veuillez ajouter une jacket';
+                      }
                     } else {
-                      $errMsg = 'Erreur! impossible d\'ajouter l\'image';
+                      $errMsg = 'Veuillez choisir un genre';
                     }
                   } else {
-                    $errMsg = 'Veuillez ajouter une jacket';
+                    $errMsg = 'Veuillez choisir la plateform';
                   }
                 } else {
-                  $errMsg = 'Veuillez choisir un genre';
+                  $errMsg = 'Veuillez choisir le pegi';
                 }
               } else {
-                $errMsg = 'Veuillez choisir la plateform';
+                $errMsg = 'Veuillez choisir une date de parution';
               }
             } else {
-              $errMsg = 'Veuillez choisir le pegi';
+              $errMsg = 'Veuillez remplir le prix';
             }
           } else {
-            $errMsg = 'Veuillez choisir une date de parution';
+            $errMsg = 'Veuillez remplir l\'éditeur';
           }
         } else {
-          $errMsg = 'Veuillez remplir le prix';
+          $errMsg = 'Veuillez remplir le nom du jeux';
         }
       } else {
-        $errMsg = 'Veuillez remplir l\'éditeur';
+        $errMsg = "";
       }
-    } else {
-      $errMsg = 'Veuillez remplir le nom du jeux';
-    }
 
-    $title = 'Ajouter article';
-
-    include('views/add_article.php');
+      include('views/add_article.php');
   } else {
     header('Location: welcome');
   }
-
 ?>
