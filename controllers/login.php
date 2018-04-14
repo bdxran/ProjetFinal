@@ -11,7 +11,7 @@
       if($getUser['password'] == $password) {
         session_start();
 
-        $_SESSION['pseudo'] = $getUser['pseudo'];
+        $_SESSION['user'] = $getUser['pseudo'];
 
         header('Location: welcome');
 

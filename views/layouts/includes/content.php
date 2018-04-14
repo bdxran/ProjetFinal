@@ -9,7 +9,7 @@
 
         $i=0;
         $plateform = 'pc';
-        $repertoire = 'css/image/';
+        $repertoire = 'css/image/jacket/';
         $req = search_image($plateform);
 
         while($result = $req->fetch()) {
@@ -37,7 +37,7 @@
 
         $i=0;
         $plateform = 'ps4';
-        $repertoire = 'css/image/';
+        $repertoire = 'css/image/jacket/';
         $req = search_image($plateform);
 
         while($result = $req->fetch()) {
@@ -65,7 +65,7 @@
 
         $i=0;
         $plateform = 'xbox';
-        $repertoire = 'css/image/';
+        $repertoire = 'css/image/jacket/';
         $req = search_image($plateform);
 
         while($result = $req->fetch()) {
@@ -93,7 +93,7 @@
 
         $i=0;
         $plateform = 'switch';
-        $repertoire = 'css/image/';
+        $repertoire = 'css/image/jacket/';
         $req = search_image($plateform);
 
         while($result = $req->fetch()) {

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title><?=$title ?></title>
     <link rel="stylesheet" type="text/css" href="../css/form.css"></link>
-    <script type="text/javascript" src="../js/del_placeholder.js"></script>
+    <script type="text/javascript" src="../js/preview.js"></script>
   </head>
   <body>
     <div id="form">
@@ -37,7 +37,7 @@
             </select>
           </li>
           <li class="title_list"><span>Genre :</span></li>
-          <li class="title_list"><span>Jacket :</span></li>
+          <li class="title_list"></li>
           <li class="ligne_list">
             <select name="genre" class="input">
               <option value="action">action</option>
@@ -49,7 +49,13 @@
               <option value="role">rôle</option>
               <option value="tir">tir</option>
             </select>
-            <input type="file" id="jacket" name="jacket" accept="image/*" class="input" />
+          </li>
+
+          <li class="title_list"><span>Jacket :</span></li>
+          <li class="title_list"></li>
+          <li>
+            <input type="file" id="jacket" name="jacket" accept="image/*" onchange="previewFile()" class="input" />
+            <img src="" height="100" id="id:jacket" alt="Image preview...">
           </li>
 
           <li class="title_list"><span>Description :</span></li>

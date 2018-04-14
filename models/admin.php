@@ -43,14 +43,4 @@
 		$req->execute(array($password,$id));
 
   }
-
-  function removeAdmin($id) {
-    require_once("include/db.php");
-
-		$bdd = db_connect();
-
-    $req = $bdd->query('DELETE FROM Admin WHERE anum = '.$id);
-
-    header('Location: panneau_administratif');
-  }
 ?>

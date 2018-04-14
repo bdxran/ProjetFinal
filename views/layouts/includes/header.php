@@ -2,14 +2,15 @@
   <div id="title"><a href="welcome" id="aTitle"><span class="colorWhite">Ultra</span> Gaming</a></div>
   <div>
     <div id="login">
-      <?php if(!empty($_SESSION['pseudo']) || !empty($_SESSION['admin'])) {?>
-        <a href="login"><img src="../../css/image/icon.png" id="imgLogin"/></a>
+      <?php if(!empty($_SESSION['user']) || !empty($_SESSION['admin'])) {?>
         <form>
           <ul id="ulLogin">
-            <?php if(!empty($_SESSION['admin'])) {
-              echo '<li class="liLogin"><a href="#" class="aLogin">'.$_SESSION['admin'].'</a></li>';
-            } else {
-              echo '<li class="liLogin"><a href="#" class="aLogin">'.$_SESSION['pseudo'].'</a></li>';
+            <?php if(!empty($_SESSION['admin'])) {?>
+              <a href="profil"><img src=<?=$repertoire_icon.$profil['icon'] ?> id="imgLogin"/></a>
+              <li class="liLogin"><a href="profil" class="aLogin"><?=$_SESSION['admin']?></a></li><?php
+            } else { ?>
+              <a href="profil"><img src=<?=$repertoire_icon.$profil['icon'] ?> id="imgLogin"/></a>
+              <li class="liLogin"><a href="profil" class="aLogin"><?=$_SESSION['user']?></a></li><?php
             } ?>
             <li class="liLogin"><a href="logout" class="aLogin">Déconnecter</a></li>
           </ul>

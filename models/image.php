@@ -1,6 +1,6 @@
 <?php
   function verif_image($image,$name) {
-    $repertoire = 'css/image/';
+    $repertoire = 'css/image/jacket/';
     $file = $repertoire.basename($name);
     $upload = true;
 
@@ -27,7 +27,24 @@
 
     $req = $bdd->prepare('SELECT jacket FROM Game WHERE NOW() >= date_parution and plateform = ? ORDER BY date_parution DESC');
     $req->execute(array($plateform));
-    
+
     return $req;
+  }
+
+  function icon($pseudo,$boolean) {
+    require_once('include/db.php');
+
+    $repertoire_icon = '../../css/image/icon/';
+    $bdd = db_connect();
+
+    if($boolean == true) {
+      $req = $bdd->prepare('SELECT icon FROM Admin WHERE pseudo = ?');
+    } else {
+      $req = $bdd->prepare('SELECT icon FROM Customers WHERE pseudo= ?');
+    }
+
+    $req->execute(array($pseudo));
+
+    return $repertoire_icon.$req->fetch();
   }
  ?>
