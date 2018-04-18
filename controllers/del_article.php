@@ -3,23 +3,26 @@
   session_start();
 
   if(!empty($_SESSION['admin'])) {
-    if(!empty($_POST['nameGame'])) {
-      if(!empty($_POST['plateform'])) {
-        $req = list_article($_POST['nameGame'],$_POST['plateform']);
+    if($_SERVER['REQUEST_METHOD'] == 'POST') {
+      if(!empty($_POST['nameGame'] ) && $_POST['nameGame'] != "Nom") {
+        if(!empty($_POST['plateform'])) {
+          $req = list_article($_POST['nameGame'],$_POST['plateform']);
 
-        if(!empty($req)) {
-          $errMsg = del($_POST['nameGame'],$_POST['plateform']);
+          if(!empty($req)) {
+            $errMsg = del($_POST['nameGame'],$_POST['plateform']);
 
-          header('Location: panneau_administration');
+            header('Location: panneau_administration');
+          } else {
+            $errMsg = 'Le jeux n\'existe pas';
+          }
         } else {
-          $errMsg = 'Le jeux n\'existe pas';
+          $errMsg = 'Veuillez choisir la plateform';
         }
       } else {
-        $errMsg = 'Veuillez choisir la plateform';
+        $errMsg = 'Veuillez remplir le nom du jeux';
       }
-    } else {
-      $errMsg = 'Veuillez remplir le nom du jeux';
     }
+
     $title = 'Supprimer article';
 
     include('views/del_article.php');

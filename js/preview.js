@@ -1,5 +1,4 @@
 function previewFile() {
-  var preview = document.querySelector('#id\\\\icon');
   var preview = document.querySelector('#id\\:jacket');
   var file    = document.querySelector('input[type=file]').files[0];
   var reader  = new FileReader();

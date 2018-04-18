@@ -48,8 +48,6 @@
         } else {
           $errMsg = 'Veuillez remplir le nom du jeux';
         }
-      } else {
-        $errMsg = "";
       }
 
       include('views/add_article.php');

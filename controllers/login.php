@@ -11,7 +11,11 @@
       if($getUser['password'] == $password) {
         session_start();
 
-        $_SESSION['user'] = $getUser['pseudo'];
+        if($getUser['grade'] == 'admin') {
+          $_SESSION['admin'] = $getUser['pseudo'];
+        } elseif($getUser['grade'] == 'user') {
+          $_SESSION['user'] = $getUser['pseudo'];
+        }
 
         header('Location: welcome');
 
@@ -23,7 +27,6 @@
       $errMsg = 'Le pseudo est incorrect ou vide!';
     }
   }
-
 
   $title = "Connection";
 

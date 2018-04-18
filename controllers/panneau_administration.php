@@ -1,12 +1,11 @@
 <?php
+  require_once('models/user.php');
   session_start();
   if(!empty($_SESSION['admin'])) {
-    require_once('models/admin.php');
-
     $title = 'Panneau d\'administration';
-    $repertoire_icon = "css/image/icon/";    
+    $repertoire_icon = "css/image/icon/";
 
-    $profil = getAdmin($_SESSION['admin']);
+    $profil = getUser($_SESSION['admin']);
 
     include('views/panneau_administration.php');
   } else {

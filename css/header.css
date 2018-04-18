@@ -7,7 +7,7 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: #AAAAAA;
+    background-color: #FFFFFF;
   }
 
   header {
@@ -58,7 +58,7 @@
 
   .aLogin {
     font-size: 15px;
-    color: #eaeaea;
+    color: #FFFFFF;
   }
 
   .aLogin:hover {
@@ -85,7 +85,7 @@
   .aMenu {
     display: block;
     padding: 10px 20px;
-    color: #eaeaea;
+    color: #FFFFFF;
     font-size: 20px;
     text-align: center;
   }
@@ -135,7 +135,7 @@
   }
 
   .colorWhite {
-    color: #eaeaea;
+    color: #FFFFFF;
   }
 }
 
@@ -144,8 +144,8 @@
     width: 80%;
     margin: auto;
     padding: 0;
-    background-color: #AAAAAA;
-    
+    background-color: #FFFFFF;
+
   }
 
   header {
@@ -196,7 +196,7 @@
 
   .aLogin {
     font-size: 20px;
-    color: #eaeaea;
+    color: #FFFFFF;
   }
 
   .aLogin:hover {
@@ -223,7 +223,7 @@
   .aMenu {
     display: block;
     padding: 10px 20px;
-    color: #eaeaea;
+    color: #FFFFFF;
     font-size: 30px;
     text-align: center;
   }
@@ -248,7 +248,7 @@
     width: 40%;
     height: 27px;
     font-size: 18px;
-    color: #eaeaea;
+    color: #FFFFFF;
     background: none;
     border: none;
     border-bottom: 2px solid #FF8C00;
@@ -260,7 +260,7 @@
     float: right;
     width: 80%;
     height: 27px;
-    color: #eaeaea;
+    color: #FFFFFF;
     background: none;
     border: none;
     border-bottom: 2px solid #FF8C00;
@@ -274,10 +274,10 @@
   }
 
   .colorWhite {
-    color: #eaeaea;
+    color: #FFFFFF;
   }
 }
 
 ::-webkit-input-placeholder {
-color: #ffffff;
+color: #FFFFFF;
 }

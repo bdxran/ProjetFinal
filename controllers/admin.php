@@ -1,9 +1,9 @@
 <?php
-  require_once('models/admin.php');
+  require_once('models/user.php');
 
   if($_SERVER['REQUEST_METHOD'] == 'GET') {
     $pseudo=htmlspecialchars($_GET['pseudo']);
-    $getAdmin = getAdmin($pseudo);
+    $getAdmin = getUser($pseudo);
 
     if(!empty($getAdmin)) {
       $password = sha1($_GET['password']);

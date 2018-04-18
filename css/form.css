@@ -13,6 +13,7 @@ body {
   width: 50%;
   background-color: #4A4A4A;
   border: 5px solid #151515;
+  box-shadow: 4px 4px 0px #505050;
   border-radius: 20px;
 }
 

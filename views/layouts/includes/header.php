@@ -16,7 +16,7 @@
           </ul>
         </form>
       <?php } else { ?>
-        <a href="login"><img src="../../css/image/icon.png" id="imgLogin"/></a>
+        <a href="login"><img src="../../css/image/icon/icon.png" id="imgLogin"/></a>
         <form>
           <ul id="ulLogin">
             <li class="liLogin"><a href="login" class="aLogin">S'identifier</a></li>
