@@ -1,10 +1,13 @@
 <?php
 require_once('models/user.php');
+require_once('models/panier.php');
+require_once('models/image.php');
 
 session_start();
 
 $title = 'Acceuil';
 $repertoire_icon = "css/image/icon/";
+$repertoire = 'css/image/jacket/';
 
 if(!empty($_SESSION['admin'])){
   $profil = getUser($_SESSION['admin']);

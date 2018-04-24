@@ -46,7 +46,7 @@
 
     $bdd = db_connect();
 
-    $req = $bdd->prepare('SELECT jacket FROM Game WHERE NOW() >= date_parution and plateform = ? ORDER BY date_parution DESC');
+    $req = $bdd->prepare('SELECT nameGame,jacket FROM Game WHERE NOW() >= date_parution and plateform = ? ORDER BY date_parution DESC');
     $req->execute(array($plateform));
 
     return $req;

@@ -31,6 +31,7 @@
     float: left;
     margin: 0;
     padding: 5px 0 0 60px;
+    width: 70%;
     height: 50px;
   }
 
@@ -43,9 +44,9 @@
   /*Login :*/
 
   #login {
-    margin: 0 0 0 75%;
+    float: left;
     padding: 10px 0 0 0;
-    width: 25%;
+    width: 10%;
     height: 50px;
   }
 
@@ -62,6 +63,47 @@
   }
 
   .aLogin:hover {
+    color: #FF8C00;
+  }
+
+  /*Panier*/
+
+  .menu_panier {
+    float: right;
+    margin: 10px 0 0 0;
+    width: 15%;
+    height: 50px;
+  }
+
+  .panier {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #FF8C00;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+  }
+
+  .number_produit {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .button {
+    margin: 3% 0 3% 3%;
+    width: 45%;
+    height: 30px;
+    background-color: #151515;
+    border: 2px solid #FF8C00;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #EAEAEA;
+  }
+
+  .button:hover {
     color: #FF8C00;
   }
 
@@ -168,7 +210,8 @@
   #title {
     float: left;
     margin: 0;
-    padding: 5px 0 0 60px;
+    padding: 5px 0 0 70px;
+    width: 70%;
     height: 70px;
   }
 
@@ -181,25 +224,66 @@
   /*Login :*/
 
   #login {
-    margin: 0 0 0 75%;
+    float: left;
     padding: 10px 0 0 0;
-    width: 25%;
-    height: 70px;
+    width: 10%;
+    height: 50px;
   }
 
   #imgLogin {
     float: left;
     padding: 0 10px 0 0;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
 
   .aLogin {
-    font-size: 20px;
+    font-size: 15px;
     color: #FFFFFF;
   }
 
   .aLogin:hover {
+    color: #FF8C00;
+  }
+
+  /*Panier*/
+
+  .menu_panier {
+    float: right;
+    margin: 10px 0 0 0;
+    width: 15%;
+    height: 50px;
+  }
+
+  .panier {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #FF8C00;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+  }
+
+  .number_produit {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .button {
+    margin: 3% 0 3% 3%;
+    width: 45%;
+    height: 30px;
+    background-color: #151515;
+    border: 2px solid #FF8C00;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #EAEAEA;
+  }
+
+  .button:hover {
     color: #FF8C00;
   }
 
@@ -224,13 +308,13 @@
     display: block;
     padding: 10px 20px;
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 34px;
     text-align: center;
   }
 
   .aMenu:hover {
     border-bottom: 5px solid #FF8C00;
-    padding: 10px 20px 11px 20px;
+    padding: 10px 20px 12px 20px;
   }
 
   /*Rechercher :*/

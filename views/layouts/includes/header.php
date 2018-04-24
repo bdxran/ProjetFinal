@@ -25,6 +25,14 @@
         </form>
       <?php } ?>
     </div>
+    <div class="menu_panier">
+      <div class="panier">
+        <div class="number_produit">
+          <?=number_article() ?>
+        </div>
+      </div>
+      <a href="panier" class="aLogin">Voir Panier</a>
+    </div>
     <div id="menu">
       <ul id="ulMenu">
         <li class="liMenu"><a href="#" class="aMenu">Jeux</a></li>
