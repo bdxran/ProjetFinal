@@ -3,55 +3,249 @@
   padding: 0;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1360px) {
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #FFFFFF;
-  }
+body {
+  margin: auto;
+  padding: 0;
+  background-color: #FFFFFF;
+}
 
+header {
+  margin: 0;
+  background-color: #151515;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Titre :*/
+
+#title {
+  float: left;
+  margin: 0;
+}
+
+.button {
+  margin: 3% 0 3% 3%;
+  background-color: #151515;
+  border: 2px solid #FF8C00;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  font-weight: bold;
+  color: #EAEAEA;
+}
+
+.button:hover {
+  color: #FF8C00;
+}
+
+#aTitle {
+  color: #FF8C00;
+  font-weight: bold;
+}
+
+/*Login :*/
+
+#login {
+  float: right;
+  margin: 10px 1% 0 0;
+}
+
+#imgLogin {
+  float: left;
+}
+
+.aLogin {
+  color: #FFFFFF;
+}
+
+.aLogin:hover {
+  color: #FF8C00;
+}
+
+/*Panier*/
+
+.menu_panier {
+  float: right;
+  margin: 15px 5% 0 0;
+  color: #FFFFFF;
+  background-color: #151515;
+  border: 2px solid #FF8C00;
+}
+
+.aPanier {
+  color: #FFFFFF;
+}
+
+/*Rechercher :*/
+
+#search {
+  float: right;
+  margin: 0 1% 0 0;
+}
+
+#iSearch {
+  float: right;
+  color: white;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #FF8C00;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+#iSearch:focus {
+  float: right;
+  color: #eaeaea;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #FF8C00;
+}
+
+#bottunSearch {
+  float: right;
+  border: none;
+  cursor: pointer;
+}
+
+.colorWhite {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1023px) {
   header {
-    margin: 0;
     width: 100%;
-    height: 110px;
+    height: 35px;
+  }
+
+  #nav {
+    position: absolute;
+    right: 0;
+    display: none;
+    margin: 35px 0 0 0;
+    padding: 0 5px;
+    width: 100%;
     background-color: #151515;
-  }
-
-  ul {
-    list-style-type: none;
-  }
-
-  a {
-    text-decoration: none;
   }
 
   /*Titre :*/
 
   #title {
-    float: left;
-    margin: 0;
-    padding: 5px 0 0 60px;
-    width: 70%;
-    height: 50px;
+    padding: 5px 0 0 2%;
+    width: auto;
+    height: 25px;
   }
 
   #aTitle {
-    color: #FF8C00;
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .navbar_toggler {
+    float: right;
+    margin: 2px 2% 0 0;
+    display: inline-block;
+    background-color: #151515;
+    border: 1px solid white;
+    border-radius: 2px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .navbar_toggler_icon {
+    display: block;
+    width: 100%;
+    font-size: 15px;
   }
 
   /*Login :*/
 
   #login {
     float: left;
-    padding: 10px 0 0 0;
-    width: 10%;
+    margin: 0 5%;
+    width: 100%;
+  }
+
+  .liLogin {
+    margin: 5px 0;
+  }
+
+  .aLogin {
+    margin: 2px;
+    font-size: 20px;
+    border: 2px solid #FF8C00;
+  }
+
+  #imgLogin {
+    width: 90px;
+    height: 90px;
+  }
+
+  /*Panier*/
+
+  .menu_panier {
+    float: left;
+    margin: 2% 5%;
+    padding: 0 5px;
+    width: auto;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  /*Rechercher :*/
+
+  #search {
+    float: left;
+    margin: 2% 5%;
+  }
+
+  #iSearch {
+    height: 25px;
+    font-size: 15px;
+    color: #FFFFFF;
+  }
+
+  #buttonSearch {
+    float: right;
+    width: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1360px) {
+
+  header {
+    width: 100%;
+    height: 70px;
+  }
+
+  /*Titre :*/
+
+  #title {
+    padding: 5px 0 0 2%;
+    width: auto;
+    height: 50px;
+  }
+
+  #aTitle {
+    font-size: 50px;
+  }
+
+  .navbar_toggler {
+    display: none;
+  }
+
+  /*Login :*/
+
+  #login {
+    width: 15%;
     height: 50px;
   }
 
   #imgLogin {
-    float: left;
     padding: 0 10px 0 0;
     width: 50px;
     height: 50px;
@@ -59,309 +253,114 @@
 
   .aLogin {
     font-size: 15px;
-    color: #FFFFFF;
-  }
-
-  .aLogin:hover {
-    color: #FF8C00;
   }
 
   /*Panier*/
 
   .menu_panier {
-    float: right;
-    margin: 10px 0 0 0;
-    width: 15%;
-    height: 50px;
-  }
-
-  .panier {
-    float: left;
-    width: 40px;
-    height: 40px;
-    border: 3px solid #FF8C00;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-  }
-
-  .number_produit {
-    margin-top: 8px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  .button {
-    margin: 3% 0 3% 3%;
-    width: 45%;
-    height: 30px;
-    background-color: #151515;
-    border: 2px solid #FF8C00;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #EAEAEA;
-  }
-
-  .button:hover {
-    color: #FF8C00;
-  }
-
-  /*Menu :*/
-
-  #menu {
-    float: left;
-    margin: 5px 0 0 50px;
+    margin: 10px 10px 0 0;
+    padding: 0 5px;
     width: auto;
-    height: 45px;
-  }
-
-  #ulMenu {
-    overflow: hidden;
-  }
-
-  .liMenu {
-    float: left;
-  }
-
-  .aMenu {
-    display: block;
-    padding: 10px 20px;
-    color: #FFFFFF;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .aMenu:hover {
-    border-bottom: 5px solid #FF8C00;
-    padding: 10px 20px 7px 20px;
+    height: 40px;
+    font-size: 18px;
   }
 
   /*Rechercher :*/
 
   #search {
-    float: right;
-    margin: 10px 10% 0 0;
-    padding: 0;
-    width: 30%;
+    padding-top: 20px;
+    width: 35%;
     height: 20px;
   }
 
   #iSearch {
-    float: right;
     width: 40%;
     height: 22px;
-    color: white;
-    background: none;
-    border: none;
-    border-bottom: 2px solid #FF8C00;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
   }
 
   #iSearch:focus {
-    float: right;
     width: 80%;
     height: 22px;
-    color: #eaeaea;
-    background: none;
-    border: none;
-    border-bottom: 2px solid #FF8C00;
   }
 
-  #bottunSearch {
+  #buttonSearch {
     float: right;
-    border: none;
-    cursor: pointer;
     width: 24px;
-  }
-
-  .colorWhite {
-    color: #FFFFFF;
   }
 }
 
 @media screen and (min-width: 1361px) {
-  body {
-    width: 80%;
-    margin: auto;
-    padding: 0;
-    background-color: #FFFFFF;
+    body {
+      width: 80%;
+    }
 
-  }
+    header {
+      width: 100%;
+      height: 70px;
+    }
 
-  header {
-    margin: auto;
-    width: 100%;
-    height: 150px;
-    background-color: #151515;
-  }
+    /*Titre :*/
 
-  ul {
-    list-style-type: none;
-  }
+    #title {
+      padding: 5px 0 0 2%;
+      width: auto;
+      height: 50px;
+    }
 
-  a {
-    text-decoration: none;
-  }
+    #aTitle {
+      font-size: 50px;
+    }
 
-  /*Titre :*/
+    .navbar_toggler {
+      display: none;
+    }
 
-  #title {
-    float: left;
-    margin: 0;
-    padding: 5px 0 0 70px;
-    width: 70%;
-    height: 70px;
-  }
+    /*Login :*/
 
-  #aTitle {
-    color: #FF8C00;
-    font-size: 70px;
-    font-weight: bold;
-  }
+    #login {
+      width: 15%;
+      height: 50px;
+    }
 
-  /*Login :*/
+    #imgLogin {
+      padding: 0 10px 0 0;
+      width: 50px;
+      height: 50px;
+    }
 
-  #login {
-    float: left;
-    padding: 10px 0 0 0;
-    width: 10%;
-    height: 50px;
-  }
+    .aLogin {
+      font-size: 15px;
+    }
 
-  #imgLogin {
-    float: left;
-    padding: 0 10px 0 0;
-    width: 50px;
-    height: 50px;
-  }
+    /*Panier*/
 
-  .aLogin {
-    font-size: 15px;
-    color: #FFFFFF;
-  }
+    .menu_panier {
+      padding: 0 5px;
+      width: auto;
+      height: 40px;
+      font-size: 18px;
+    }
 
-  .aLogin:hover {
-    color: #FF8C00;
-  }
+    /*Rechercher :*/
 
-  /*Panier*/
+    #search {
+      padding-top: 20px;
+      width: 38%;
+      height: 20px;
+    }
 
-  .menu_panier {
-    float: right;
-    margin: 10px 0 0 0;
-    width: 15%;
-    height: 50px;
-  }
+    #iSearch {
+      width: 40%;
+      height: 22px;
+    }
 
-  .panier {
-    float: left;
-    width: 40px;
-    height: 40px;
-    border: 3px solid #FF8C00;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-  }
+    #iSearch:focus {
+      width: 80%;
+      height: 22px;
+    }
 
-  .number_produit {
-    margin-top: 8px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  .button {
-    margin: 3% 0 3% 3%;
-    width: 45%;
-    height: 30px;
-    background-color: #151515;
-    border: 2px solid #FF8C00;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #EAEAEA;
-  }
-
-  .button:hover {
-    color: #FF8C00;
-  }
-
-  /*Menu :*/
-
-  #menu {
-    float: left;
-    margin: 10px 0 0 50px;
-    width: auto;
-    height: 60px;
-  }
-
-  #ulMenu {
-    overflow: hidden;
-  }
-
-  .liMenu {
-    float: left;
-  }
-
-  .aMenu {
-    display: block;
-    padding: 10px 20px;
-    color: #FFFFFF;
-    font-size: 34px;
-    text-align: center;
-  }
-
-  .aMenu:hover {
-    border-bottom: 5px solid #FF8C00;
-    padding: 10px 20px 12px 20px;
-  }
-
-  /*Rechercher :*/
-
-  #search {
-    float: right;
-    margin: 20px 10% 0 0;
-    padding: 0;
-    width: 30%;
-    height: 20px;
-  }
-
-  #iSearch {
-    float: right;
-    width: 40%;
-    height: 27px;
-    font-size: 18px;
-    color: #FFFFFF;
-    background: none;
-    border: none;
-    border-bottom: 2px solid #FF8C00;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-  }
-
-  #iSearch:focus {
-    float: right;
-    width: 80%;
-    height: 27px;
-    color: #FFFFFF;
-    background: none;
-    border: none;
-    border-bottom: 2px solid #FF8C00;
-  }
-
-  #bottunSearch {
-    float: right;
-    border: none;
-    cursor: pointer;
-    width: 29px;
-  }
-
-  .colorWhite {
-    color: #FFFFFF;
-  }
-}
-
-::-webkit-input-placeholder {
-color: #FFFFFF;
+    #buttonSearch {
+      float: right;
+      width: 24px;
+    }
 }

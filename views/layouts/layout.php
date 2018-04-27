@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/header.css"></link>
     <link rel="stylesheet" type="text/css" href="../../css/content.css"></link>
     <link rel="stylesheet" type="text/css" href="../../css/footer.css"></link>
+    <script type="text/javascript" src="../js/button_navbar.js"></script>
   </head>
   <body>
     <?php include('includes/header.php') ?>
