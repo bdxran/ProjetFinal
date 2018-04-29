@@ -1,56 +1,46 @@
+#contener {
+  margin: auto;
+}
+
+#banniere {
+  position: absolute;
+  z-index: -1;
+  background-color: #151515;
+}
+
+#title_best {
+  float: none;
+  text-align: center;
+}
+
 #content {
-  float: right;
-  margin-right: 3%;
-  width: 60%;
+  z-index: -2;
+  position: relative;
 }
 
 .window {
-  margin: 20px auto;
-  padding: 0;
-  width: auto;
-  height: 15%;
   border: 5px solid #151515;
 }
 
 .title_window {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 30px;
   background-color: #151515;
 }
 
 .mise_page {
   overflow: hidden;
-  width: 100%;
-  height: 100%;
   list-style: none;
 }
 
 .articleLeft {
   float: left;
-  padding: 1% 4% 1% 8%;
-  width: 15%;
-  height: 100%;
 }
 
 .articleMiddle {
   float: left;
-  padding: 1% 4%;
-  width: 15%;
-  height: 100%;
 }
 
 .articleRigth {
   float: left;
-  padding: 1% 8% 1% 4%;
-  width: 15%;
-  height: 100%;
-}
-
-.jacket {
-  width: 100%;
-  height: 200px;
 }
 
 .jacket:hover {
@@ -59,19 +49,264 @@
 
 h1 {
   float: left;
-  margin: 2px 0 0 20px;
-  font-size: 20px;
   color: #FF8C00;
 }
 
 .redirection_window {
   float: right;
-  margin: 2px 20px 5px 0;
-  font-size: 20px;
   font-weight: bold;
   color: #FFFFFF;
 }
 
 .redirection_window:hover {
   color: #FF8C00;
+}
+
+
+@media screen and (max-width: 1023px) {
+  #contener {
+    width: 100%;
+  }
+
+  #banniere {
+    top: 55px;
+    left: 1%;
+    width: 25%;
+    height: 40%;
+    border: 3px solid #151515;
+  }
+
+  #title_best {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+  }
+
+  #img_best {
+    width: 100%;
+    height: 91%;
+  }
+
+  #content {
+    padding-bottom: 80px;
+    left: 30%;
+    width: 69%;
+  }
+
+  .window {
+    margin: 20px auto;
+    padding: 0;
+    width: auto;
+    height: 15%;
+  }
+
+  .title_window {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 20px;
+  }
+
+  .mise_page {
+    width: 100%;
+    height: 100%;
+  }
+
+  .articleLeft {
+    padding: 1% 1% 1% 2%;
+    width: 22.5%;
+    height: 100%;
+  }
+
+  .articleMiddle {
+    padding: 1% 1%;
+    width: 22.5%;
+    height: 50%;
+  }
+
+  .articleRigth {
+    padding: 1% 2% 1% 1%;
+    width: 22.5%;
+    height: 50%;
+  }
+
+  .jacket {
+    width: 100%;
+    height: 100px;
+  }
+
+  h1 {
+    margin: 2px 0 0 20px;
+    font-size: 12px;
+  }
+
+  .redirection_window {
+    margin: 2px 20px 5px 0;
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1360px) {
+  #contener {
+    width: 100%;
+  }
+
+  #banniere {
+    top: 90px;
+    left: 5%;
+    width: 25%;
+    height: 40%;
+    border: 3px solid #151515;
+  }
+
+  #title_best {
+    margin: 0 0 5px 0;
+    font-size: 40px;
+  }
+
+  #img_best {
+    width: 100%;
+    height: 90%;
+  }
+
+  #content {
+    padding-bottom: 80px;
+    left: 35%;
+    width: 60%;
+  }
+
+  .window {
+    margin: 20px auto;
+    padding: 0;
+    width: auto;
+    height: 15%;
+  }
+
+  .title_window {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+  }
+
+  .mise_page {
+    width: 100%;
+    height: 100%;
+  }
+
+  .articleLeft {
+    padding: 1% 4% 1% 8%;
+    width: 15%;
+    height: 100%;
+  }
+
+  .articleMiddle {
+    padding: 1% 4%;
+    width: 15%;
+    height: 100%;
+  }
+
+  .articleRigth {
+    padding: 1% 8% 1% 4%;
+    width: 15%;
+    height: 100%;
+  }
+
+  .jacket {
+    width: 100%;
+    height: 200px;
+  }
+
+  h1 {
+    margin: 2px 0 0 20px;
+    font-size: 20px;
+  }
+
+  .redirection_window {
+    margin: 2px 20px 5px 0;
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (min-width: 1361px) {
+  #contener {
+    width: 100%;
+  }
+
+  #banniere {
+    top: 90px;
+    left: 5%;
+    width: 25%;
+    height: 45%;
+    border: 3px solid #151515;
+  }
+
+  #title_best {
+    margin: 0 0 5px 0;
+    font-size: 40px;
+  }
+
+  #img_best {
+    width: 100%;
+    height: 91%;
+  }
+
+  #content {
+    padding-bottom: 80px;
+    left: 35%;
+    width: 60%;
+  }
+
+  .window {
+    margin: 20px auto;
+    padding: 0;
+    width: auto;
+    height: 15%;
+  }
+
+  .title_window {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+  }
+
+  .mise_page {
+    width: 100%;
+    height: 100%;
+  }
+
+  .articleLeft {
+    padding: 1% 4% 1% 8%;
+    width: 15%;
+    height: 100%;
+  }
+
+  .articleMiddle {
+    padding: 1% 4%;
+    width: 15%;
+    height: 100%;
+  }
+
+  .articleRigth {
+    padding: 1% 8% 1% 4%;
+    width: 15%;
+    height: 100%;
+  }
+
+  .jacket {
+    width: 100%;
+    height: 200px;
+  }
+
+  h1 {
+    margin: 2px 0 0 20px;
+    font-size: 20px;
+  }
+
+  .redirection_window {
+    margin: 2px 20px 5px 0;
+    font-size: 20px;
+  }
 }

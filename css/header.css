@@ -117,6 +117,7 @@ a {
 
   #nav {
     position: absolute;
+    z-index: 1;
     right: 0;
     display: none;
     margin: 35px 0 0 0;

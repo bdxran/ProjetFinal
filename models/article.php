@@ -10,13 +10,13 @@
     return $req;
   }
 
-  function article($nameGame,$plateform) {
+  function article($id) {
     require_once('include/db.php');
 
     $bdd = db_connect();
 
-    $req = $bdd->prepare('SELECT * FROM Game WHERE nameGame = ? AND plateform = ?');
-    $req->execute(array($nameGame,$plateform));
+    $req = $bdd->prepare('SELECT * FROM Game WHERE gnum = ?');
+    $req->execute(array($id));
 
     return $req->fetch();
   }
@@ -52,5 +52,19 @@
     $req->execute(array($nameGame,$plateform));
 
     return $req;
+  }
+
+  function best() {
+    require_once('include/db.php');
+
+    $bdd = db_connect();
+
+    $req = $bdd->query('SELECT idGame FROM Orders GROUP BY idGame HAVING COUNT(idGame)=( SELECT MAX(mycount) FROM ( SELECT idGame, COUNT(idGame) mycount FROM Orders GROUP BY idGame)AS t)');
+    $req = $req->fetch();
+
+    $req2 = $bdd->prepare('SELECT * FROM Game WHERE gnum = ?');
+    $req2->execute(array($req['idGame']));
+
+    return $req2;
   }
  ?>

@@ -4,8 +4,8 @@
 
   session_start();
 
-  if(isset($_GET['nameGame']) AND isset($_GET['plateform'])){
-    $req = article($_GET['nameGame'],$_GET['plateform']);
+  if(isset($_GET['id'])){
+    $req = article($_GET['id']);
   }
 
   $title = $req['nameGame'];
