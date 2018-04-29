@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: auto;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+#main {
+  position: absolute;
+  min-height: 100%;
+}
+
+@media screen and (min-width: 1361px) {
+  #main {
+    left: 10%;
+    width: 80%;
+  }
+}

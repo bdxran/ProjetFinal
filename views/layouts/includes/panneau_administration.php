@@ -14,7 +14,5 @@
     <td><?=$result['pseudo']?></td>
     <td><?=$result['mail']?></td>
   </tr>
-<?php
-  }
-?>
+<?php } ?>
 </table>

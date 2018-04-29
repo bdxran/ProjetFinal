@@ -7,9 +7,7 @@
     <th>Prix</th>
     <th>Total</th>
   </tr>
-  <?php
-    for($i = 0; $i < count($_SESSION['panier']['nameGame']); $i++){
-      ?>
+  <?php for($i = 0; $i < count($_SESSION['panier']['nameGame']); $i++){ ?>
       <tr>
         <td><?=$i+1 ?></td>
         <td><?=$_SESSION['panier']['nameGame'][$i] ?></td>
@@ -19,9 +17,7 @@
         <td><?=somme_article($_SESSION['panier']['quantite'][$i],$_SESSION['panier']['price'][$i]) ?></td>
         <td><a href="panier?id=<?=$_SESSION['panier']['id'][$i] ?>">Supprimer l'article</a></td>
       </tr>
-      <?php
-    }
-   ?>
+      <?php } ?>
    <tr>
      <td></td>
      <td></td>

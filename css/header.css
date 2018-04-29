@@ -1,14 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: auto;
-  padding: 0;
-  background-color: #FFFFFF;
-}
-
 header {
   margin: 0;
   background-color: #151515;
@@ -53,7 +42,7 @@ a {
 
 #login {
   float: right;
-  margin: 10px 1% 0 0;
+  margin: 10px 10px 0 0;
 }
 
 #imgLogin {
@@ -72,7 +61,6 @@ a {
 
 .menu_panier {
   float: right;
-  margin: 15px 5% 0 0;
   color: #FFFFFF;
   background-color: #151515;
   border: 2px solid #FF8C00;
@@ -80,6 +68,10 @@ a {
 
 .aPanier {
   color: #FFFFFF;
+}
+
+.aPanier:hover {
+  color: #FF8C00;
 }
 
 /*Rechercher :*/
@@ -176,7 +168,6 @@ a {
 
   .aLogin {
     margin: 2px;
-    font-size: 20px;
     border: 2px solid #FF8C00;
   }
 
@@ -258,7 +249,7 @@ a {
   /*Panier*/
 
   .menu_panier {
-    margin: 10px 10px 0 0;
+    margin: 15px 20px 0 0;
     padding: 0 5px;
     width: auto;
     height: 40px;
@@ -290,10 +281,6 @@ a {
 }
 
 @media screen and (min-width: 1361px) {
-    body {
-      width: 80%;
-    }
-
     header {
       width: 100%;
       height: 70px;
@@ -328,13 +315,10 @@ a {
       height: 50px;
     }
 
-    .aLogin {
-      font-size: 15px;
-    }
-
     /*Panier*/
 
     .menu_panier {
+      margin: 15px 20px 0 0;
       padding: 0 5px;
       width: auto;
       height: 40px;

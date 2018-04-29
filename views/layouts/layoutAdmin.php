@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/panneau_administratif.css"></link>
     <link rel="stylesheet" type="text/css" href="../../css/article.css"></link>
     <link rel="stylesheet" type="text/css" href="../../css/footer.css"></link>
+    <script type="text/javascript" src="../js/button_navbar.js"></script>
   </head>
   <body>
     <?php include('includes/header.php') ?>

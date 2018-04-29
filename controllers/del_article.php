@@ -1,5 +1,6 @@
 <?php
   require_once('models/article.php');
+  
   session_start();
 
   if(!empty($_SESSION['admin'])) {
