@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title><?=$title ?></title>
+    <link rel="stylesheet" type="text/css" href="../../css/default.css"></link>
     <link rel="stylesheet" type="text/css" href="../../css/header.css"></link>
     <link rel="stylesheet" type="text/css" href="../../css/panneau_administratif.css"></link>
     <link rel="stylesheet" type="text/css" href="../../css/article.css"></link>

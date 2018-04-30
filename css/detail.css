@@ -1,0 +1,223 @@
+#design_info {
+  float: left;
+  background-color: #E6E6E6;
+  border: 2px solid #151515;
+}
+
+#design_title {
+  float: left;
+  background-color: #151515;
+  border-bottom: 2px solid #151515;
+}
+
+#title_game {
+  color: #FF8C00;
+  font-weight: bold;
+}
+
+#jacket_game {
+  float: left;
+  border: 2px solid #151515;
+}
+
+#info_game {
+  float: left;
+}
+
+.label_game{
+  display: inline-block;
+  color: #FF8C00;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.info_game {
+  display: inline-block;
+}
+
+#form_game {
+  float: left;
+  background-color: #151515;
+  border-top: 1px solid #151515;
+}
+
+.prix_game {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  color: #FF8C00;
+}
+
+.button_sale {
+  color: #FFFFFF;
+  background-color: #151515;
+  border: 2px solid #FF8C00;
+}
+
+.button_sale:hover {
+  color: #FF8C00;
+}
+
+@media screen and (max-width: 1023px) {
+  #design_info {
+    margin: 5% 0 100px 2.5%;
+    width: 95%;
+  }
+
+  #design_title {
+    margin: 0 0 2% 0;
+    width: 100%;
+    height: 50px;
+  }
+
+  #title_game {
+    margin: 10px 0 0 2%;
+    font-size: 30px;
+  }
+
+  #jacket_game {
+    width: 75%;
+    margin: 5% 0 0 12%;
+  }
+
+  #info_game {
+    margin: 0 0 2% 2%;
+    width: 100%;
+  }
+
+  .label_game{
+    margin: 5px 0 2px 0;
+    font-size: 20px;
+  }
+
+  .info_game {
+    margin: 0 0 0 2%;
+    width: 90%;
+  }
+
+  #form_game {
+    width: 100%;
+    height: 50px;
+  }
+
+  .prix_game {
+    margin: 0 0 0 2%;
+    font-size: 30px;
+  }
+
+  .button_sale {
+    margin: 10px 0 0 2%;
+    width: 100px;
+    height: 30px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1360px) {
+  #design_info {
+    margin: 5% 0 0 2%;
+    width: 74%;
+  }
+
+  #design_title {
+    margin: 0 0 2% 0;
+    width: 100%;
+    height: 50px;
+  }
+
+  #title_game {
+    margin: 10px 0 0 2%;
+    font-size: 30px;
+  }
+
+  #jacket_game {
+    width: 20%;
+    margin: 5% 0 0 2%;
+  }
+
+  #info_game {
+    margin: 0 0 2% 2%;
+    width: 100%;
+  }
+
+  .label_game{
+    margin: 5px 0 2px 0;
+    font-size: 20px;
+  }
+
+  .info_game {
+    margin: 0 0 0 2%;
+    width: 90%;
+  }
+
+  #form_game {
+    width: 100%;
+    height: 50px;
+  }
+
+  .prix_game {
+    margin: 0 0 0 2%;
+    font-size: 30px;
+  }
+
+  .button_sale {
+    margin: 10px 0 0 2%;
+    width: 100px;
+    height: 30px;
+  }
+}
+
+
+@media screen and (min-width: 1361px) {
+  #design_info {
+    margin: 5% 0 0 2%;
+    width: 74%;
+  }
+
+  #design_title {
+    margin: 0 0 2% 0;
+    width: 100%;
+    height: 50px;
+  }
+
+  #title_game {
+    margin: 10px 0 0 2%;
+    font-size: 30px;
+  }
+
+  #jacket_game {
+    width: 20%;
+    margin: 5% 0 0 2%;
+  }
+
+  #info_game {
+    margin: 0 0 2% 2%;
+    width: 100%;
+  }
+
+  .label_game{
+    margin: 5px 0 2px 0;
+    font-size: 20px;
+  }
+
+  .info_game {
+    margin: 0 0 0 2%;
+    width: 90%;
+  }
+
+  #form_game {
+    width: 100%;
+    height: 50px;
+  }
+
+  .prix_game {
+    margin: 0 0 0 2%;
+    font-size: 30px;
+  }
+
+  .button_sale {
+    margin: 10px 0 0 2%;
+    width: 100px;
+    height: 30px;
+  }
+}

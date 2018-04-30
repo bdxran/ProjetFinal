@@ -15,7 +15,7 @@
         <td><?=$_SESSION['panier']['quantite'][$i] ?></td>
         <td><?=$_SESSION['panier']['price'][$i] ?></td>
         <td><?=somme_article($_SESSION['panier']['quantite'][$i],$_SESSION['panier']['price'][$i]) ?></td>
-        <td><a href="panier?id=<?=$_SESSION['panier']['id'][$i] ?>">Supprimer l'article</a></td>
+        <td><a href="panier?id=<?=$_SESSION['panier']['id'][$i] ?>"><img src="../css/image/supprimer.png" id="supprimer_img"/></a></td>
       </tr>
       <?php } ?>
    <tr>

@@ -5,6 +5,7 @@
     <title><?=$title ?></title>
     <link rel="stylesheet" type="text/css" href="../../css/default.css"></link>
     <link rel="stylesheet" type="text/css" href="../../css/header.css"></link>
+    <link rel="stylesheet" type="text/css" href="../../css/detail.css"></link>
     <link rel="stylesheet" type="text/css" href="../../css/footer.css"></link>
     <script type="text/javascript" src="../js/button_navbar.js"></script>
   </head>
