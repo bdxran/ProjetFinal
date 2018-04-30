@@ -4,7 +4,6 @@
 
 #banniere {
   position: absolute;
-  z-index: -1;
   background-color: #151515;
 }
 
@@ -14,7 +13,6 @@
 }
 
 #content {
-  z-index: -2;
   position: relative;
 }
 
@@ -135,13 +133,13 @@ h1 {
   }
 
   h1 {
-    margin: 2px 0 0 20px;
-    font-size: 12px;
+    margin: 0 0 0 10px;
+    font-size: 15px;
   }
 
   .redirection_window {
-    margin: 2px 20px 5px 0;
-    font-size: 20px;
+    margin: 0 20px 0 0;
+    font-size: 15px;
   }
 }
 
