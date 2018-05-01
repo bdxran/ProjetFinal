@@ -66,12 +66,8 @@ a {
   border: 2px solid #FF8C00;
 }
 
-.aPanier {
-  color: #FFFFFF;
-}
-
-.aPanier:hover {
-  color: #FF8C00;
+.menu_panier:hover {
+  color: #ff8C00;
 }
 
 /*Rechercher :*/

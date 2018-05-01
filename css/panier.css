@@ -1,4 +1,165 @@
+table {
+  float: left;
+  border-collapse: collapse;
+}
+
+th, td {
+  color: #FFFFFF;
+  border: 2px solid #151515;
+}
+
+th {
+  color: #FF8C00;
+  font-weight: bold;
+}
+
 #supprimer_img {
-  width: 20px;
-  height: 20px;
+  vertical-align: bottom;
+}
+
+#tr_th {
+  background-color: #151515;
+}
+
+.tr_td {
+  background-color: #6F6F6F;
+  text-align: center;
+}
+
+.tr_td:nth-child(even) {
+  background-color: #A1A1A1;
+}
+
+.plus_moins {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.plus_moins:hover {
+  color: #FF8C00;
+}
+
+.button_panier {
+  float: right;
+  color: #FFFFFF;
+  background-color: #151515;
+  border: 2px solid #FF8C00;
+}
+
+.button_panier:hover {
+  color: #FF8C00;
+}
+
+
+@media screen and (max-width: 1023px) {
+
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1360px) {
+  #contener {
+    margin: auto;
+    width: 100%;
+  }
+
+  #supprimer_img {
+    width: 20px;
+    height: 20px;
+  }
+
+  table {
+    margin-top: 2%;
+    width: 100%;
+  }
+
+  th {
+    height: 40px;
+    font-size: 25px;
+  }
+
+  .tr_td {
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .left_element {
+    width: 5%;
+  }
+
+  .middle_element {
+    width: 20%;
+  }
+
+  .middle_element_plus {
+    width: 10%;
+  }
+
+  .right_element {
+    width: 10%;
+  }
+
+  .plus_moins {
+    margin: 0 20%;
+  }
+
+  .button_panier {
+    margin: 10px 2% 0 0;
+    width: 100px;
+    height: 30px;
+  }
+}
+
+
+@media screen and (min-width: 1361px) {
+  #contener {
+    margin: auto;
+    width: 100%;
+  }
+
+  #supprimer_img {
+    margin: 5px 0 0 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  table {
+    margin-top: 2%;
+    width: 100%;
+  }
+
+  th {
+    height: 40px;
+    font-size: 25px;
+  }
+
+  .tr_td {
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .left_element {
+    width: 5%;
+  }
+
+  .middle_element {
+    width: 20%;
+  }
+
+  .middle_element_plus {
+    width: 10%;
+  }
+
+  .right_element {
+    width: 10%;
+  }
+
+  .plus_moins {
+    margin: 0 20%;
+  }
+
+  .button_panier {
+    margin: 10px 2% 0 0;
+    width: 100px;
+    height: 30px;
+  }
 }

@@ -52,15 +52,18 @@
       }
     }
 
-      function update_article($id, $quantite) {
+      function update_article($id, $moins, $plus) {
         if(creation_panier()) {
-          if($quantite > 0) {
-            $article = array_search($id, $_SESSION['panier']['id']);
-
-            if($article != false) {
-              $_SESSION['panier']['quantite'] = $quantite;
+          $article = array_search($id, $_SESSION['panier']['id']);
+          if($article !== false) {
+            if($moins == true) {
+              $_SESSION['panier']['quantite'][$article] = $_SESSION['panier']['quantite'][$article] - 1;
+            } elseif($plus == true) {
+              $_SESSION['panier']['quantite'][$article] = $_SESSION['panier']['quantite'][$article] + 1;
             }
-          } else {
+          }
+
+          if($_SESSION['panier']['quantite'][$article] <= 0) {
             del_article($id);
           }
         }

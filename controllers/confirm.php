@@ -1,12 +1,12 @@
 <?php
   require_once('models/panier.php');
   require_once('models/user.php');
-  
+
   session_start();
 
   $verif = false;
 
-  if($_SERVER['REQUEST_METHOD'] == 'GET') {
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!empty($_SESSION['admin'])){
       $user = getUser($_SESSION['admin']);
     } elseif(!empty($_SESSION['user'])) {

@@ -17,6 +17,7 @@
 
 #jacket_game {
   float: left;
+  background-color: #151515;
   border: 2px solid #151515;
 }
 
@@ -60,7 +61,7 @@
 
 @media screen and (max-width: 1023px) {
   #design_info {
-    margin: 5% 0 100px 2.5%;
+    margin: 5% 0 5% 2.5%;
     width: 95%;
   }
 
@@ -77,6 +78,7 @@
 
   #jacket_game {
     width: 75%;
+    height: 400px;
     margin: 5% 0 0 12%;
   }
 
@@ -115,7 +117,7 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1360px) {
   #design_info {
-    margin: 5% 0 0 2%;
+    margin: 5% 0 5% 2%;
     width: 74%;
   }
 
@@ -132,6 +134,7 @@
 
   #jacket_game {
     width: 20%;
+    height: 400px;
     margin: 5% 0 0 2%;
   }
 
@@ -170,7 +173,7 @@
 
 @media screen and (min-width: 1361px) {
   #design_info {
-    margin: 5% 0 0 2%;
+    margin: 5% 0 5% 2%;
     width: 74%;
   }
 
@@ -187,6 +190,7 @@
 
   #jacket_game {
     width: 20%;
+    height: 400px;
     margin: 5% 0 0 2%;
   }
 

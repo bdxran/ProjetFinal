@@ -8,8 +8,9 @@
 
   <nav id="nav">
     <div class="" id="button_navbar">
-      <button class="menu_panier"><a href="panier" class="aPanier">Voir Panier</a> <?=number_article() ?></button>
-
+      <form action="panier" method="post">
+        <input type="submit" name="view_panier" value="Voir Panier <?=number_article() ?>" class="menu_panier">
+      </form>
       <div id="login">
         <?php if(!empty($_SESSION['user']) || !empty($_SESSION['admin'])) {?>
           <?php if(!empty($_SESSION['admin'])) {?>
