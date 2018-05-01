@@ -52,7 +52,56 @@ th {
 
 
 @media screen and (max-width: 1023px) {
+  #contener {
+    margin: auto;
+    width: 100%;
+  }
 
+  #supprimer_img {
+    width: 20px;
+    height: 20px;
+  }
+
+  table {
+    margin-top: 2%;
+    width: 100%;
+  }
+
+  th {
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .tr_td {
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .left_element {
+    width: 5%;
+  }
+
+  .middle_element {
+    width: 20%;
+  }
+
+  .middle_element_plus {
+    width: 10%;
+  }
+
+  .right_element {
+    width: 10%;
+  }
+
+  .plus_moins {
+    margin: 0 20%;
+  }
+
+  .button_panier {
+    margin: 10px 2% 0 0;
+    width: 100px;
+    height: 30px;
+  }
 }
 
 

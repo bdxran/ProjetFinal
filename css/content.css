@@ -269,7 +269,7 @@ h1 {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 30px;
+    height: 40px;
   }
 
   .mise_page {
@@ -278,35 +278,35 @@ h1 {
   }
 
   .articleLeft {
-    padding: 1% 4% 1% 8%;
-    width: 15%;
+    padding: 1% 2% 1% 4%;
+    width: 20%;
     height: 100%;
   }
 
   .articleMiddle {
-    padding: 1% 4%;
-    width: 15%;
+    padding: 1% 2%;
+    width: 20%;
     height: 100%;
   }
 
   .articleRigth {
-    padding: 1% 8% 1% 4%;
-    width: 15%;
+    padding: 1% 4% 1% 2%;
+    width: 20%;
     height: 100%;
   }
 
   .jacket {
     width: 100%;
-    height: 200px;
+    height: 300px;
   }
 
   h1 {
-    margin: 2px 0 0 20px;
-    font-size: 20px;
+    margin: 5px 0 0 20px;
+    font-size: 25px;
   }
 
   .redirection_window {
-    margin: 2px 20px 5px 0;
-    font-size: 20px;
+    margin: 5px 20px 5px 0;
+    font-size: 25px;
   }
 }
