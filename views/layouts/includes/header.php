@@ -1,5 +1,4 @@
 <header>
-
     <div id="title"><a href="welcome" id="aTitle"><span class="colorWhite">Ultra</span> Gaming</a></div>
     <button type="button" name="button_navbar" id="button_navbar_js" data-target="#button_navbar" class="navbar_toggler">
       <img src="../../css/image/button_navbar.png">
@@ -34,7 +33,7 @@
         <?php } ?>
       </div>
       <div id="search">
-        <form>
+        <form action="search_article" method="post">
           <input type="image" src="../../css/image/loupe.png" alt="submit" id="buttonSearch"/>
           <input type="text" name="search" placeholder="Recherche..." id="iSearch"/>
         </form>

@@ -1,7 +1,7 @@
 <div id="content">
   <form method="post" id="form_recherche">
     <h1>Formulaire de recherche</h1>
-    <input type="text" name="recherche" value=<?=$_POST['recherche']?> class="input_recherche">
+    <input type="text" name="recherche" value="<?=$_POST['recherche']?>" class="input_recherche">
     <input type="text" name="plateform" placeholder="plateform" value="" class="input_recherche">
     <input type="submit" name="Rechercher" value="Rechercher" class="button_recherche">
   </form>
