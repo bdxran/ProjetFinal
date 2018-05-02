@@ -9,7 +9,7 @@
     <div id="content">
       <section class="window">
         <div class="title_window">
-          <h1>Jeux Pc</h1><a href="#" class="redirection_window">+</a>
+          <h1>Jeux Pc</h1><form action="catalogue" method="post"><input type="hidden" name="plateform" value="pc"><input type="submit" name="+" value="+" class="redirection_window"></form>
         </div>
         <ul class="mise_page">
           <?php
@@ -34,7 +34,7 @@
       </section>
       <section class="window">
         <div class="title_window">
-          <h1>Jeux Ps4</h1><a href="#" class="redirection_window">+</a>
+          <h1>Jeux Ps4</h1><form action="catalogue" method="post"><input type="hidden" name="plateform" value="ps4"><input type="submit" name="+" value="+" class="redirection_window"></form>
         </div>
         <ul class="mise_page">
           <?php
@@ -59,7 +59,7 @@
       </section>
       <section class="window">
         <div class="title_window">
-          <h1>Jeux Xbox</h1><a href="#" class="redirection_window">+</a>
+          <h1>Jeux Xbox</h1><form action="catalogue" method="post"><input type="hidden" name="plateform" value="xbox"><input type="submit" name="+" value="+" class="redirection_window"></form>
         </div>
         <ul class="mise_page">
           <?php
@@ -84,7 +84,7 @@
       </section>
       <section class="window">
         <div class="title_window">
-          <h1>Jeux Switch</h1><a href="#" class="redirection_window">+</a>
+          <h1>Jeux Switch</h1><form action="catalogue" method="post"><input type="hidden" name="plateform" value="switch"><input type="submit" name="+" value="+" class="redirection_window"></form>
         </div>
         <ul class="mise_page">
           <?php

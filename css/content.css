@@ -61,6 +61,8 @@ h1 {
 .redirection_window {
   float: right;
   font-weight: bold;
+  border: none;
+  background-color: #151515;
   color: #FFFFFF;
 }
 

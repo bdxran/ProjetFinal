@@ -83,4 +83,15 @@
 
     return $req;
   }
+
+  function catalogue_game($plateform) {
+    require_once('include/db.php');
+
+    $bdd = db_connect();
+
+    $req = $bdd->prepare("SELECT * FROM Game WHERE plateform = ?");
+    $req->execute(array($plateform));
+
+    return $req;
+  }
  ?>
