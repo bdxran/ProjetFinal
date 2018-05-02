@@ -1,41 +1,136 @@
 #article_window {
-  float: right;
-  margin: 5%;
-  width: 16%;
+  float: left;
   border: 2px solid #151515;
   box-shadow: 2px 2px 0px #505050;
   background-color: #4A4A4A;
 }
 
 .title_window {
-  padding: 5px 0px 5px 10px;
-  height: 25px;
+  text-align: center;
   background-color: #151515;
-  font-size: 20px;
+  font-weight: bold;
   color: #FF8C00;
 }
 
 .content_article {
-  margin: 5px 5px 5px 5px;
-  height: 30px;
+  text-align: center;
 }
 
 .design_button {
-  width: 100px;
-  height: 30px;
   background-color: #151515;
   border: 2px solid #151515;
   border-radius: 5px;
 }
 
 .lien_button {
-  font-size: 15px;
   font-weight: bold;
   color: #EAEAEA;
 }
 
 .lien_button:hover {
-  font-size: 15px;
-  font-weight: bold;
   color: #FF8C00;
+}
+
+
+@media screen and (max-width: 1023px) {
+  #main {
+    width: 100%;
+  }
+
+  #article_window {
+    margin: 10% 2% 0 2%;
+    width: 96%;
+  }
+
+  .title_window {
+    padding: 5px 0px 5px 10px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .content_article {
+    margin: 5px 5px 5px 5px;
+    height: 30px;
+  }
+
+  .design_button {
+    width: 100px;
+    height: 30px;
+  }
+
+  .lien_button {
+    font-size: 15px;
+  }
+
+  .lien_button:hover {
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1360px) {
+  #main {
+    width: 100%;
+  }
+
+  #article_window {
+    margin: 10% 0 0 0;
+    width: auto;
+  }
+
+  .title_window {
+    padding: 5px 0px 5px 10px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .content_article {
+    margin: 5px 5px 5px 5px;
+    height: 30px;
+  }
+
+  .design_button {
+    width: 100px;
+    height: 30px;
+  }
+
+  .lien_button {
+    font-size: 15px;
+  }
+
+  .lien_button:hover {
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (min-width: 1361px) {
+  #article_window {
+    margin: 10% 0 0 0;
+    width: auto;
+  }
+
+  .title_window {
+    padding: 5px 0px 5px 10px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .content_article {
+    margin: 5px 5px 5px 5px;
+    height: 30px;
+  }
+
+  .design_button {
+    width: 100px;
+    height: 30px;
+  }
+
+  .lien_button {
+    font-size: 15px;
+  }
+
+  .lien_button:hover {
+    font-size: 15px;
+  }
 }

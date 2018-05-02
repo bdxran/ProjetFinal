@@ -11,14 +11,16 @@
     <script type="text/javascript" src="../js/preview.js"></script>
   </head>
   <body>
-    <?php include('includes/header.php')?>
-    <?php include('includes/profil.php') ?>
-    <?php include('includes/footer.php')?>
-    <script language="javascript">
-      var error = '<?php echo $errMsg ?>'
-      if(error != "") {
-        alert(error);
-      }
-   </script>
+    <div id="main">
+      <?php include('includes/header.php')?>
+      <?php include('includes/profil.php') ?>
+      <?php include('includes/footer.php')?>
+      <script language="javascript">
+        var error = '<?php echo $errMsg ?>'
+        if(error != "") {
+          alert(error);
+        }
+     </script>
+  </div>
   </body>
 </html>

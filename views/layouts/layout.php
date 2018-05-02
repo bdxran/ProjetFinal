@@ -13,7 +13,6 @@
     <div id="main">
       <?php include('includes/header.php') ?>
       <?php include('includes/content.php') ?>
-      <div id="push"></div>
       <?php include('includes/footer.php') ?>
     </div>
   </body>

@@ -22,10 +22,6 @@ body {
   padding-bottom: 50px;
 }
 
-#push {
-  height: 100px;
-}
-
 @media screen and (min-width: 1361px) {
   #main {
     left: 10%;

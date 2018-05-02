@@ -11,9 +11,11 @@
     <script type="text/javascript" src="../js/button_navbar.js"></script>
   </head>
   <body>
-    <?php include('includes/header.php') ?>
-    <?php include('includes/panneau_administration.php') ?>
-    <?php include('includes/article.php') ?>
-    <?php include('includes/footer.php') ?>
+    <div id="main">
+      <?php include('includes/header.php') ?>
+      <?php include('includes/panneau_administration.php') ?>
+      <?php include('includes/article.php') ?>
+      <?php include('includes/footer.php') ?>
+    </div>
   </body>
 </html>

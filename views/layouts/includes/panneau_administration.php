@@ -1,8 +1,7 @@
 <table class="steelBlueCols">
   <thead>
     <tr>
-      <th>Pseudo</th>
-      <th>Mail</th>
+      <th>Admin Connecter</th>
     </tr>
   </thead>
 <?php
@@ -12,7 +11,6 @@
 ?>
   <tr>
     <td><?=$result['pseudo']?></td>
-    <td><?=$result['mail']?></td>
   </tr>
 <?php } ?>
 </table>

@@ -1,8 +1,10 @@
 table.steelBlueCols {
-  margin: auto;
+  float: left;
+  margin: 10% 20% 0 10%;
   border: 4px solid #1C1C1C;
   background-color: #4A4A4A;
-  width: 100%;
+  box-shadow: 2px 2px 0px #505050;
+  width: 15%;
   text-align: center;
   border-collapse: collapse;
 }
@@ -11,7 +13,7 @@ table.steelBlueCols td, table.steelBlueCols th {
   padding: 5px 10px;
 }
 table.steelBlueCols tbody td {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   color: #FFFFFF;
 }
@@ -26,9 +28,9 @@ table.steelBlueCols thead {
   border-bottom: 10px solid #1C1C1C;
 }
 table.steelBlueCols thead th {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #FF8C00;
   text-align: center;
   border-left: 2px solid #1C1C1C;
 }
@@ -48,4 +50,91 @@ table.steelBlueCols tfoot .links a{
   color: #398AA4;
   padding: 2px 8px;
   border-radius: 5px;
+}
+
+
+@media screen and (max-width: 1023px) {
+  table.steelBlueCols {
+    margin: 10% 2% 0 2%;
+    width: 96%;
+  }
+
+  table.steelBlueCols td, table.steelBlueCols th {
+    padding: 5px 10px;
+  }
+
+  table.steelBlueCols tbody td {
+    font-size: 15px;
+  }
+
+  table.steelBlueCols thead th {
+    font-size: 20px;
+  }
+
+  table.steelBlueCols tfoot td {
+    font-size: 13px;
+  }
+
+  table.steelBlueCols tfoot .links a{
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1360px) {
+  table.steelBlueCols {
+    margin: 10% 20% 0 10%;
+    width: 15%;
+  }
+
+  table.steelBlueCols td, table.steelBlueCols th {
+    padding: 5px 10px;
+  }
+
+  table.steelBlueCols tbody td {
+    font-size: 15px;
+  }
+
+  table.steelBlueCols thead th {
+    font-size: 20px;
+  }
+
+  table.steelBlueCols tfoot td {
+    font-size: 13px;
+  }
+
+  table.steelBlueCols tfoot .links a{
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+}
+
+
+@media screen and (min-width: 1361px) {
+  table.steelBlueCols {
+    margin: 10% 20% 0 10%;
+    width: 15%;
+  }
+
+  table.steelBlueCols td, table.steelBlueCols th {
+    padding: 5px 10px;
+  }
+
+  table.steelBlueCols tbody td {
+    font-size: 15px;
+  }
+
+  table.steelBlueCols thead th {
+    font-size: 20px;
+  }
+
+  table.steelBlueCols tfoot td {
+    font-size: 13px;
+  }
+
+  table.steelBlueCols tfoot .links a{
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
 }
