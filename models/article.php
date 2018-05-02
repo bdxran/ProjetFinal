@@ -67,4 +67,20 @@
 
     return $req2;
   }
+
+  function recherche_game($recherche,$plateform) {
+    require_once('include/db.php');
+
+    $bdd = db_connect();
+
+    if(!empty($plateform)){
+      $req = $bdd->prepare("SELECT * FROM Game WHERE nameGame LIKE CONCAT('%',?,'%') AND plateform = ?");
+      $req->execute(array($recherche,$plateform));
+    } else {
+      $req = $bdd->prepare("SELECT * FROM Game WHERE nameGame LIKE CONCAT('%',?,'%')");
+      $req->execute(array($recherche));
+    }
+
+    return $req;
+  }
  ?>

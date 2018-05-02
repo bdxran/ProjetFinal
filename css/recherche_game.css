@@ -1,0 +1,176 @@
+#form_recherche {
+  background-color: #151515;
+}
+
+h1 {
+  text-align: center;
+  color: #FF8C00;
+}
+
+.button_recherche {
+  color: #FFFFFF;
+  background-color: #151515;
+  border: 2px solid #FF8C00;
+}
+
+.button_recherche:hover {
+  color: #FF8C00;
+}
+
+#list_recherche {
+  list-style: none;
+}
+
+.li_list_recherche  {
+  border: 2px solid #FF8C00;
+  background-color: #151515;
+}
+
+.img_list {
+  float: left;
+  border-right: 2px solid #FF8C00;
+}
+
+.label_list_recherche {
+  float: left;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1023px) {
+  #main {
+    width: 100%;
+  }
+
+  #content {
+    width: 100%;
+  }
+
+  #form_recherche {
+    margin: 2% auto;
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .input_recherche {
+    margin: 2% 0 2% 5%;
+    width: 30%;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .button_recherche {
+    margin: 2% 0 2% 5%;
+    width: 100px;
+    height: 30px;
+  }
+
+  .li_list_recherche  {
+    margin: 2% 5% 1% 5%;
+    height: 200px;
+  }
+
+  .img_list {
+    width: 150px;
+    height: 200px;
+  }
+
+  .label_list_recherche {
+    margin: 1% 0 5% 2%;
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1360px) {
+  #main {
+    width: 100%;
+  }
+
+  #content {
+    width: 100%;
+  }
+
+  #form_recherche {
+    margin: 2% auto;
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .input_recherche {
+    margin: 2% 0 2% 5%;
+    width: 30%;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .button_recherche {
+    margin: 2% 0 2% 5%;
+    width: 100px;
+    height: 30px;
+  }
+
+  .li_list_recherche  {
+    margin: 2% 5% 1% 5%;
+    height: 200px;
+  }
+
+  .img_list {
+    width: 150px;
+    height: 200px;
+  }
+
+  .label_list_recherche {
+    margin: 1% 0 5% 2%;
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (min-width: 1361px) {
+  #content {
+    width: 100%;
+  }
+
+  #form_recherche {
+    margin: 2% auto;
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .input_recherche {
+    margin: 2% 0 2% 5%;
+    width: 30%;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .button_recherche {
+    margin: 2% 0 2% 5%;
+    width: 100px;
+    height: 30px;
+  }
+
+  .li_list_recherche  {
+    margin: 2% 5% 1% 5%;
+    height: 200px;
+  }
+
+  .img_list {
+    width: 150px;
+    height: 200px;
+  }
+
+  .label_list_recherche {
+    margin: 1% 0 5% 2%;
+    font-size: 20px;
+  }
+}
