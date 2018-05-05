@@ -1,7 +1,7 @@
 <?php
-require_once('models/user.php');
-require_once('models/image.php');
-require_once('models/panier.php');
+  require_once('models/user.php');
+  require_once('models/image.php');
+  require_once('models/panier.php');
   require_once('models/article.php');
 
   session_start();
@@ -13,12 +13,18 @@ require_once('models/panier.php');
     $profil = getUser($_SESSION['admin']);
     $req = best_game_graphique();
 
-    $monfichier = fopen('doc/best_game.txt', 'a+');
+    $monfichier = fopen('doc/best_game.txt', 'w+');
 
-    for($i=0; $i<5;$i++) {
-      $req2 = getArticle($req['gnum'][$i]);
-      $info = concat($req2['nameGame'],"|",$req['mycount'][$i]);
-      fputs($monfichier, $info);
+    $i = 0;
+
+    while($result=$req->fetch()) {
+      $req2 = getArticle($result['gnum'][$i]);
+
+      $info = $req2['nameGame']."|".$result['mycount'][$i];
+
+      fputs($monfichier, $info."\n");
+
+      $i++;
     }
 
     fclose($monfichier);
