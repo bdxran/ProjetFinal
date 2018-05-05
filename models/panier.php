@@ -96,25 +96,38 @@
         return count($_SESSION['panier']['id']);
       }
 
-      function conca_id($id) {
-        for($i = 0; $i < count($id); $i++) {
-          if($i==0){
-            $idGame = $id[$i];
-          } else {
-            $idGame = $idGame."|".$id[$i];
-          }
-        }
-
-        return $idGame;
-      }
-
-      function commande($idUser,$idGame,$mt) {
+      function commande($idUser) {
         require_once('include/db.php');
 
         $bdd = db_connect();
 
-        $req = $bdd->prepare('INSERT INTO Orders (idUser,idGame,prix,odate) VALUES (?,?,?,NOW())');
-        $req->execute(array($idUser,$idGame,$mt));
+        $req = $bdd->prepare('INSERT INTO Orders (idUser,odate) VALUES (?,NOW())');
+        $req->execute(array($idUser));
+
+        return true;
+      }
+
+      function last_orders() {
+        require_once('include/db.php');
+
+        $bdd = db_connect();
+
+        $req = $bdd->prepare('SELECT onum FROM Orders ORDER BY onum DESC');
+        $req->execute();
+
+        return $req->fetch();
+      }
+
+      function commande_article($onum,$session) {
+        require_once('include/db.php');
+
+        $bdd = db_connect();
+
+        $req = $bdd->prepare('INSERT INTO OrdersArticle (onum,gnum,quantite,prix) VALUES (?,?,?,?)');
+
+        for($i = 0; $i < count($session['id']); $i++){
+          $req->execute(array($onum,$session['id'][$i],$session['quantite'][$i],$session['price'][$i]));
+        }
 
         return true;
       }

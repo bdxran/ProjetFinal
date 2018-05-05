@@ -81,7 +81,17 @@ DROP TABLE IF EXISTS Orders;
 CREATE TABLE Orders (
 	onum INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	idUser INT(11) NOT NULL REFERENCES Customers(idUser),
-	idGame INT(11) NOT NULL REFERENCES Game(idGame),
-	prix DECIMAL(10,2) NOT NULL,
 	odate DATE NOT NULL
+)ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+-- Structure table OrdersArticle:
+-- ------------------------------
+
+DROP TABLE IF EXISTS OrdersArticle;
+CREATE TABLE OrdersArticle (
+	oanum INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	onum INT(11) NOT NULL REFERENCES Orders(onum),
+	gnum INT(11) NOT NULL REFERENCES Game(gnum),
+	quantite INT(11) NOT NULL,
+	prix DECIMAL(10,2) NOT NULL
 )ENGINE=INNODB DEFAULT CHARSET=latin1;

@@ -5,6 +5,7 @@
   session_start();
 
   $verif = false;
+  $verif2 = false;
 
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!empty($_SESSION['admin'])){
@@ -15,19 +16,19 @@
       header('Location: login');
     }
 
-    $idGame = conca_id($_SESSION['panier']['id']);
+    $verif = commande($user['unum']);
 
-    $mt = montant_total();
+    $req = last_orders();
 
-    $verif = commande($user['unum'],$idGame,$mt);
+    $verif2 = commande_article($req['onum'],$_SESSION['panier']);
+  }
+
+  if($verif && $verif2) {
+    echo "Commande validé!";
 
     del_panier();
 
     header('Location: welcome');
-  }
-
-  if($verif) {
-    echo "Commande validé!";
   } else {
     echo "Erreur commande pas valide!";
   }

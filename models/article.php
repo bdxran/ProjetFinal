@@ -59,11 +59,11 @@
 
     $bdd = db_connect();
 
-    $req = $bdd->query('SELECT idGame FROM Orders GROUP BY idGame HAVING COUNT(idGame)=( SELECT MAX(mycount) FROM ( SELECT idGame, COUNT(idGame) mycount FROM Orders GROUP BY idGame)AS t)');
+    $req = $bdd->query('SELECT gnum, SUM(quantite) mycount FROM OrdersArticle GROUP BY gnum ORDER BY mycount DESC');
     $req = $req->fetch();
 
     $req2 = $bdd->prepare('SELECT * FROM Game WHERE gnum = ?');
-    $req2->execute(array($req['idGame']));
+    $req2->execute(array($req['gnum']));
 
     return $req2;
   }
@@ -93,5 +93,15 @@
     $req->execute(array($plateform));
 
     return $req;
+  }
+
+  function best_game_graphique() {
+    require_once('include/db.php');
+
+    $bdd = db_connect();
+
+    $req = $bdd->query("SELECT gnum, SUM(quantite) mycount FROM OrdersArticle GROUP BY gnum ORDER BY mycount DESC");
+
+    return $req->fetch();
   }
  ?>
