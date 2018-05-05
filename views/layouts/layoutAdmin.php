@@ -15,12 +15,10 @@
     google.charts.load("current", {packages:['corechart']});
         google.charts.setOnLoadCallback(drawChart);
 
-        var table = '<?php echo $result?>';
-
         function drawChart() {
           var data = google.visualization.arrayToDataTable([
             ["Element", "Density", { role: "style" } ],
-            [table[0][0], 8.94, "#b87333"],
+            [a, 8.94, "#b87333"],
             ["Silver", 10.49, "silver"],
             ["Gold", 19.30, "gold"],
             ["Platinum", 21.45, "color: #e5e4e2"]

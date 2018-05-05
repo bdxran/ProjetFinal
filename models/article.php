@@ -100,8 +100,9 @@
 
     $bdd = db_connect();
 
-    $req = $bdd->query("SELECT gnum, SUM(quantite) mycount FROM OrdersArticle GROUP BY gnum ORDER BY mycount DESC");
+    $req = $bdd->prepare("SELECT gnum, SUM(quantite) mycount FROM OrdersArticle GROUP BY gnum ORDER BY mycount DESC");
+    $req->execute();
 
-    return $req->fetch();
+    return $req;
   }
  ?>
