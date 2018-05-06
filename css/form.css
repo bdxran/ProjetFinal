@@ -57,7 +57,7 @@ h1 {
 
 @media screen and (max-width: 1023px) {
   #form {
-    margin: auto;
+    margin: 2% auto;
     width: 95%;
     box-shadow: none;
   }
@@ -116,7 +116,7 @@ h1 {
 
 @media screen and (min-width: 1024px) and (max-width: 1360px) {
   #form {
-    margin: auto;
+    margin: 2% auto;
     width: 50%;
   }
 
@@ -174,7 +174,7 @@ h1 {
 
 @media screen and (min-width: 1361px) {
   #form {
-    margin: auto;
+    margin: 2% auto;
     width: 50%;
   }
 
