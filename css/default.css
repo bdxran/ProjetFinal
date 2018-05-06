@@ -13,6 +13,10 @@ body {
   background-color: #FFFFFF;
 }
 
+#resultat {
+  display: none;
+}
+
 #main {
   position: absolute;
   height: auto !important;
@@ -21,6 +25,7 @@ body {
   margin: 0 auto;
   padding-bottom: 50px;
 }
+
 
 @media screen and (min-width: 1361px) {
   #main {

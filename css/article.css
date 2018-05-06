@@ -38,7 +38,7 @@
   }
 
   #article_window {
-    margin: 10% 2% 0 2%;
+    margin: 2% 2% 0 2%;
     width: 96%;
   }
 
@@ -74,7 +74,7 @@
   }
 
   #article_window {
-    margin: 10% 0 0 0;
+    margin: 2% 0 0 0;
     width: auto;
   }
 
@@ -106,7 +106,7 @@
 
 @media screen and (min-width: 1361px) {
   #article_window {
-    margin: 10% 0 0 0;
+    margin: 2% 0 0 0;
     width: auto;
   }
 

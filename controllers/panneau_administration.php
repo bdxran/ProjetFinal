@@ -13,21 +13,17 @@
     $profil = getUser($_SESSION['admin']);
     $req = best_game_graphique();
 
-    $monfichier = fopen('doc/best_game.txt', 'w+');
-
-    $i = 0;
+    $resultat = array();
 
     while($result=$req->fetch()) {
-      $req2 = getArticle($result['gnum'][$i]);
+      $req2 = getArticle($result['gnum']);
 
-      $info = $req2['nameGame']."|".$result['mycount'][$i];
+      $info = "";
 
-      fputs($monfichier, $info."\n");
+      $info = $req2['nameGame']."|".$result['mycount'];
 
-      $i++;
+      array_push($resultat, $info);
     }
-
-    fclose($monfichier);
 
     include('views/panneau_administration.php');
   } else {

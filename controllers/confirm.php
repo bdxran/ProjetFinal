@@ -24,12 +24,14 @@
   }
 
   if($verif && $verif2) {
-    echo "Commande validé!";
+    $errMsg = "Commande validé!";
 
     del_panier();
 
     header('Location: welcome');
   } else {
-    echo "Erreur commande pas valide!";
+    $errMsg = "Erreur commande pas valide!";
+
+    header('Location: welcome');
   }
  ?>

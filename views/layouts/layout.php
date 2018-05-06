@@ -15,5 +15,11 @@
       <?php include('includes/content.php') ?>
       <?php include('includes/footer.php') ?>
     </div>
+    <script language="javascript">
+      var error = '<?php echo $errMsg ?>'
+      if(error != "") {
+        alert(error);
+      }
+    </script>
   </body>
 </html>
