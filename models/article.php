@@ -10,6 +10,17 @@
     return $req;
   }
 
+  function update($nameGame,$editeur,$prix,$date_parution,$plateform,$pegi,$genre,$jacket,$description,$id) {
+    require_once('include/db.php');
+
+    $bdd = db_connect();
+
+    $req = $bdd->prepare('UPDATE Game SET nameGame = ?, editeur = ?, plateform = ?, prix = ?, pegi = ?, genre = ?, jacket = ?, date_parution = ?, description = ? WHERE gnum = ?');
+    $req->execute(array($nameGame,$editeur,$plateform,$prix,$pegi,$genre,$jacket,$date_parution,$description,$id));
+
+    return $req;
+  }
+
   function article($id) {
     require_once('include/db.php');
 
