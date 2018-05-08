@@ -1,11 +1,12 @@
 <?php
+  session_start();
+
   require_once('models/user.php');
   require_once('models/article.php');
   require_once('models/panier.php');
 
-  session_start();
-
   $repertoire_icon = "css/image/icon/";
+  $repertoire = "css/image/jacket/";
 
   if(!empty($_SESSION['admin'])){
     $profil = getUser($_SESSION['admin']);
@@ -20,7 +21,6 @@
   }
 
   $title = $req['nameGame'];
-  $repertoire = "css/image/jacket/";
 
   include('views/detail.php');
  ?>

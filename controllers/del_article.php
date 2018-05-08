@@ -1,7 +1,9 @@
 <?php
-  require_once('models/article.php');
-  
   session_start();
+
+  require_once('models/article.php');
+
+  $title = 'Supprimer article';
 
   if(!empty($_SESSION['admin'])) {
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -23,8 +25,6 @@
         $errMsg = 'Veuillez remplir le nom du jeux';
       }
     }
-
-    $title = 'Supprimer article';
 
     include('views/del_article.php');
   } else {

@@ -1,11 +1,12 @@
 <?php
+  session_start();
+
   require_once('models/user.php');
   require_once('models/panier.php');
   require_once('models/article.php');
 
-  session_start();
-
   $repertoire_icon = "css/image/icon/";
+  $title = 'Panier';
 
   if(!empty($_SESSION['admin'])){
     $profil = getUser($_SESSION['admin']);
@@ -14,8 +15,6 @@
   } else {
     $profil['icon'] = "icon.png";
   }
-
-  $title = 'Panier';
 
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!empty($_POST['quantite'])){
@@ -41,6 +40,8 @@
     del_article($_GET['id']);
     header('Location: panier');
   }
+
+  $_SESSION['amt'] = montant_total();
 
   include('views/panier.php');
  ?>

@@ -6,14 +6,14 @@
     <input type="submit" name="Rechercher" value="Rechercher" class="button_recherche">
   </form>
   <ul id="list_recherche">
-    <?php
-      while($result = $req->fetch()) {
-        echo '<li class="li_list_recherche">
-          <form action="detail" method="post"><input type="hidden" name="id" value='.$result['gnum'].'/>
-            <input type="image" src='.$repertoire.$result['jacket'].' class="img_list">
-            <label class="label_list_recherche">'.$result['nameGame'].'</label>
+    <?php while($result = $req->fetch()) { ?>
+        <li class="li_list_recherche">
+          <form action="detail" method="post">
+            <input type="hidden" name="id" value="<?=$result['gnum']?>"/>
+            <input type="image" src="<?=$repertoire.$result['jacket']?>" class="img_list">
+            <label class="label_list_recherche"><?=$result['nameGame']?></label>
           </form>
-        </li>';
-      } ?>
+        </li>
+    <?php  } ?>
   </ul>
 </div>

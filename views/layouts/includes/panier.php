@@ -26,7 +26,7 @@
          <td class="middle_element"></td>
          <td class="middle_element"></td>
          <td class="middle_element_plus"></td>
-         <td class="right_element"><?=montant_total() ?> €</td>
+         <td class="right_element"><?=$_SESSION['amt'] ?> €</td>
          <td class="left_element"></td>
        </tr>
     </table>

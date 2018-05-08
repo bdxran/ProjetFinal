@@ -1,9 +1,9 @@
 <?php
+  session_start();
+
   require_once('models/user.php');
   require_once('models/image.php');
   require_once('models/panier.php');
-
-  session_start();
 
   $title = 'Profil';
   $repertoire_icon = "css/image/icon/";

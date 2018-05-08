@@ -1,7 +1,9 @@
 <?php
+  session_start();
+
   require_once('models/user.php');
 
-  session_start();
+  $title = 'Modifier mot de passe';
 
   if(!empty($_SESSION['user'])) {
     $user = getUser($_SESSION['user']);
@@ -31,8 +33,6 @@
       $errMsg = 'Veuillez indiquer votre ancien mot de passe!';
     }
   }
-
-  $title = 'Modifier mot de passe';
 
   include('views/update_password.php');
  ?>

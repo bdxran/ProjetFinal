@@ -1,15 +1,15 @@
 <?php
+  session_start();
+
   require_once('models/user.php');
   require_once('models/image.php');
   require_once('models/panier.php');
   require_once('models/article.php');
 
-  session_start();
+  $title = 'Panneau d\'administration';
+  $repertoire_icon = "css/image/icon/";
 
   if(!empty($_SESSION['admin'])) {
-    $title = 'Panneau d\'administration';
-    $repertoire_icon = "css/image/icon/";
-
     $profil = getUser($_SESSION['admin']);
     $req = best_game_graphique();
 

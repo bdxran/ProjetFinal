@@ -86,6 +86,7 @@
         $_SESSION['panier']['price'] = array();
         $_SESSION['panier']['plateform'] = array();
         $_SESSION['panier']['quantite'] = array();
+        $_SESSION['amt'] = 0;
       }
 
       function somme_article($quantite,$price) {
@@ -96,13 +97,13 @@
         return count($_SESSION['panier']['id']);
       }
 
-      function commande($idUser) {
+      function commande($idUser,$amt) {
         require_once('include/db.php');
 
         $bdd = db_connect();
 
-        $req = $bdd->prepare('INSERT INTO Orders (idUser,odate) VALUES (?,NOW())');
-        $req->execute(array($idUser));
+        $req = $bdd->prepare('INSERT INTO Orders (idUser,amt,odate) VALUES (?,?,NOW())');
+        $req->execute(array($idUser,$amt));
 
         return true;
       }

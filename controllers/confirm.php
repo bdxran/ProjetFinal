@@ -1,8 +1,8 @@
 <?php
+  session_start();
+
   require_once('models/panier.php');
   require_once('models/user.php');
-
-  session_start();
 
   $verif = false;
   $verif2 = false;
@@ -16,7 +16,7 @@
       header('Location: login');
     }
 
-    $verif = commande($user['unum']);
+    $verif = commande($user['unum'],$_SESSION['amt']);
 
     $req = last_orders();
 

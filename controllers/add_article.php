@@ -1,8 +1,8 @@
 <?php
+  session_start();
+
   require_once('models/article.php');
   require_once('models/image.php');
-
-  session_start();
 
   if(!empty($_SESSION['admin'])) {
       $title = 'Ajouter article';

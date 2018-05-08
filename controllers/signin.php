@@ -1,6 +1,8 @@
 <?php
   require("models/user.php");
 
+  $title = 'Inscription';
+
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $login=htmlspecialchars($_POST['pseudo']);
 
@@ -69,8 +71,6 @@
       $errMsg = 'Pseudo trop long, taille maximun de 16 caractére!';
     }
   }
-
-  $title = 'Inscription';
 
   include('views/signin.php')
 ?>

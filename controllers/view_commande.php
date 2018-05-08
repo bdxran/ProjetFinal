@@ -6,11 +6,9 @@
   require_once('models/panier.php');
   require_once('models/image.php');
 
-  $title = 'Acceuil';
+  $title = "Vos commandes";
   $repertoire_icon = "css/image/icon/";
   $repertoire = 'css/image/jacket/';
-  $req = best();
-  $best = $req->fetch();
 
   if(!empty($_SESSION['admin'])){
     $profil = getUser($_SESSION['admin']);
@@ -20,5 +18,7 @@
     $profil['icon'] = "icon.png";
   }
 
-  include('views/welcome.php');
+  $req = getCommande($profil['unum']);
+
+  include('views/view_commande.php');
 ?>

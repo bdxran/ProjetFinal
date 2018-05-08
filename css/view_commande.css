@@ -1,0 +1,217 @@
+#entete {
+  background-color: #151515;
+  border: 2px solid #FF8C00;
+}
+
+#title_commande {
+  text-align: center;
+  color: #FF8C00;
+}
+
+#corps {
+  color: #FFFFFF;
+}
+
+.mise_date {
+  float: left;
+  border-bottom: 2px solid #FF8C00;
+}
+
+.title_date {
+  float: left;
+}
+
+.total {
+  float: right;
+  text-align: right;
+}
+
+.commande {
+  float: left;
+  border: 2px solid #FF8C00;
+  background-color: #151515;
+}
+
+.img_commande {
+  float: left;
+  border-right: 2px solid #FF8C00;
+}
+
+.label {
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1023px) {
+  #entete {
+    margin: 10px auto;
+    padding-top: 15px;
+    width: 100%;
+    height: 50px;
+  }
+
+  #title_commande {
+    font-size: 30px;
+  }
+
+  #corps {
+    margin: 5px auto;
+    width: 100%;
+  }
+
+  .mise_date {
+    width: 100%;
+  }
+
+  .title_date {
+    margin: 5px 0 0 10px;
+    width: 70%;
+    height: 20px;
+    font-size: 15px;
+  }
+
+  .total {
+    margin: 0 10px 0 0;
+    width: 30%;
+    height: 20px;
+    font-size: 15px;
+  }
+
+  .commande {
+    margin: 5px auto;
+  }
+
+  .img_commande {
+    width: 150px;
+    height: 200px;
+    border-bottom: 2px solid #FF8C00;
+  }
+
+  .ul_list_commande {
+    margin-top: 5px;
+  }
+
+  .li_list_commande {
+    margin: 5px 0 0 10px;
+  }
+
+  .title_game {
+    margin-left: 50px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1360px) {
+  #entete {
+    margin: 10px auto;
+    padding-top: 15px;
+    width: 80%;
+    height: 50px;
+  }
+
+  #title_commande {
+    font-size: 30px;
+  }
+
+  #corps {
+    margin: 5px auto;
+    width: 80%;
+  }
+
+  .mise_date {
+    width: 100%;
+  }
+
+  .title_date {
+    margin: 5px 0 0 10px;
+    width: 70%;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .total {
+    margin: 5px 10px 0 0;
+    width: 20%;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .commande {
+    margin: 5px auto;
+  }
+
+  .img_commande {
+    width: 150px;
+    height: 200px;
+  }
+
+  .ul_list_commande {
+    margin-top: 5px;
+  }
+
+  .li_list_commande {
+    margin: 5px 0 0 10px;
+  }
+
+  .title_game {
+    margin-left: 50px;
+  }
+}
+
+
+@media screen and (min-width: 1361px) {
+  #entete {
+    margin: 10px auto;
+    padding-top: 15px;
+    width: 80%;
+    height: 50px;
+  }
+
+  #title_commande {
+    font-size: 30px;
+  }
+
+  #corps {
+    margin: 5px auto;
+    width: 80%;
+  }
+
+  .mise_date {
+    width: 100%;
+  }
+
+  .title_date {
+    margin: 5px 0 0 10px;
+    width: 70%;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .total {
+    margin: 5px 10px 0 0;
+    width: 20%;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .commande {
+    margin: 5px auto;
+  }
+
+  .img_commande {
+    width: 150px;
+    height: 200px;
+  }
+
+  .ul_list_commande {
+    margin-top: 5px;
+  }
+
+  .li_list_commande {
+    margin: 5px 0 0 10px;
+  }
+
+  .title_game {
+    margin-left: 50px;
+  }
+}

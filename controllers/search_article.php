@@ -1,30 +1,30 @@
 <?php
-require_once('models/user.php');
-require_once('models/article.php');
-require_once('models/panier.php');
-require_once('models/image.php');
+  session_start();
 
-session_start();
+  require_once('models/user.php');
+  require_once('models/article.php');
+  require_once('models/panier.php');
+  require_once('models/image.php');
 
-if(!empty($_SESSION['admin'])){
-  $profil = getUser($_SESSION['admin']);
-} elseif(!empty($_SESSION['user'])) {
-  $profil = getUser($_SESSION['user']);
-} else {
-  $profil['icon'] = "icon.png";
-}
+  $title = "Recherche Article";
+  $repertoire_icon = "css/image/icon/";
+  $repertoire = 'css/image/jacket/';
 
-$title = "Recherche Article";
-$repertoire_icon = "css/image/icon/";
-$repertoire = 'css/image/jacket/';
-
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
-  if(!empty($_POST['search'])) {
-    $req = recherche_game($_POST['search'],$_POST['plateform']);
+  if(!empty($_SESSION['admin'])){
+    $profil = getUser($_SESSION['admin']);
+  } elseif(!empty($_SESSION['user'])) {
+    $profil = getUser($_SESSION['user']);
   } else {
-    $errMsg = "Veuillez entrée une valeur de recherche";
+    $profil['icon'] = "icon.png";
   }
-}
 
-include('views/search_article.php');
- ?>
+  if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    if(!empty($_POST['search'])) {
+      $req = recherche_game($_POST['search'],$_POST['plateform']);
+    } else {
+      $errMsg = "Veuillez entrée une valeur de recherche";
+    }
+  }
+
+  include('views/search_article.php');
+?>

@@ -5,6 +5,7 @@
   <span class="info"><?=$profil['mail'] ?></span><br/>
   <span class="info"><?=$profil['adress']." ".$profil['numero'] ?></span><br/>
   <span class="info"><?=$profil['code_postal']." ".$profil['city'] ?></span><br/>
+  <span class="info"><a href="view_commande" class="a_pass">Voir commande</a></span><br/>
 </section>
 <section>
   <form method="post" enctype="multipart/form-data">

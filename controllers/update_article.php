@@ -1,10 +1,15 @@
 <?php
+  session_start();
+
   require_once('models/user.php');
   require_once('models/article.php');
   require_once('models/panier.php');
   require_once('models/image.php');
 
-  session_start();
+  $affiche = false;
+  $repertoire_icon = "css/image/icon/";
+  $repertoire = 'css/image/jacket/';
+  $title = "Recherche Article";
 
   if(!empty($_SESSION['admin'])){
     $profil = getUser($_SESSION['admin']);
@@ -13,11 +18,6 @@
   } else {
     $profil['icon'] = "icon.png";
   }
-
-  $affiche = false;
-  $repertoire_icon = "css/image/icon/";
-  $repertoire = 'css/image/jacket/';
-  $title = "Recherche Article";
 
   if($_SERVER['REQUEST_METHOD'] == 'POST'){
     if(!empty($_POST['recherche'])) {

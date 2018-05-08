@@ -1,6 +1,8 @@
 <?php
   require_once('models/user.php');
 
+  $title = "Connection";
+
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $pseudo=htmlspecialchars($_POST['pseudo']);
     $getUser = getUser($pseudo);
@@ -28,8 +30,5 @@
     }
   }
 
-  $title = "Connection";
-
   include('views/login.php');
-
 ?>
