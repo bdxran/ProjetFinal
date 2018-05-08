@@ -14,6 +14,7 @@ if(!empty($_SESSION['admin'])){
   $profil['icon'] = "icon.png";
 }
 
+$title = "Recherche Article";
 $repertoire_icon = "css/image/icon/";
 $repertoire = 'css/image/jacket/';
 

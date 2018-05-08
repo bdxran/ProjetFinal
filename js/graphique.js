@@ -1,4 +1,5 @@
 window.onload = function() {
+
     google.charts.load("current", {packages:['corechart']});
         google.charts.setOnLoadCallback(drawChart);
 
@@ -46,5 +47,20 @@ window.onload = function() {
 
       var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
       chart.draw(view, options);
-  }
+
+      var bouton = document.getElementById('button_navbar_js');
+      var nav = document.getElementById('nav');
+
+  };
+
+  var bouton = document.getElementById('button_navbar_js');
+  var nav = document.getElementById('nav');
+  
+  bouton.onclick = function(e){
+      if(nav.style.display=="block"){
+          nav.style.display="none";
+      }else{
+          nav.style.display="block";
+      }
+  };
 }

@@ -1,5 +1,6 @@
 #columnchart_values {
-  margin: 10px auto 0 auto;
-  width: 90%;
+  float: left;
+  margin: 10px;
+  width: 100%;
   height: 400px;
 }

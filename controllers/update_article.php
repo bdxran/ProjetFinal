@@ -17,6 +17,7 @@
   $affiche = false;
   $repertoire_icon = "css/image/icon/";
   $repertoire = 'css/image/jacket/';
+  $title = "Recherche Article";
 
   if($_SERVER['REQUEST_METHOD'] == 'POST'){
     if(!empty($_POST['recherche'])) {

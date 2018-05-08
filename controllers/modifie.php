@@ -10,6 +10,7 @@ if(!empty($_SESSION['admin'])) {
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!empty($_POST['id'])) {
       $repertoire = 'css/image/jacket/';
+      $title = "Modification Article";
 
       $req = getArticle($_POST['id']);
 

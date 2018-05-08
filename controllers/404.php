@@ -1,16 +1,16 @@
 <?php
+require_once('models/user.php');
+require_once('models/panier.php');
+require_once('models/article.php');
 
 session_start();
 
 $repertoire_icon = "css/image/icon/";
+$title = "404";
 
-if(!empty($_SESSION['admin'])) {
-  require_once('models/admin.php');
-
-  $profil = getAdmin($_SESSION['admin']);
+if(!empty($_SESSION['admin'])){
+  $profil = getUser($_SESSION['admin']);
 } elseif(!empty($_SESSION['user'])) {
-  require_once('models/user.php');
-
   $profil = getUser($_SESSION['user']);
 } else {
   $profil['icon'] = "icon.png";

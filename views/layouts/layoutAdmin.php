@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="../../css/panneau_administratif.css"></link>
     <link rel="stylesheet" type="text/css" href="../../css/article.css"></link>
     <link rel="stylesheet" type="text/css" href="../../css/footer.css"></link>
-    <script type="text/javascript" src="../js/button_navbar.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="../js/graphique.js"></script>
   </head>
