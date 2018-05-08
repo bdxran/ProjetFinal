@@ -1,3 +1,18 @@
+#form_recherche {
+  background-color: #151515;
+  border: 2px solid #FF8C00;
+}
+
+.button_recherche {
+  color: #FFFFFF;
+  background-color: #151515;
+  border: 2px solid #FF8C00;
+}
+
+.button_recherche:hover {
+  color: #FF8C00;
+}
+
 #entete {
   background-color: #151515;
   border: 2px solid #FF8C00;
@@ -43,6 +58,28 @@
 
 
 @media screen and (max-width: 1023px) {
+  #content {
+    width: 100%;
+  }
+
+  #form_recherche {
+    margin: 2% auto;
+    width: 50%;
+  }
+
+  .input_recherche {
+    margin: 2% 0 2% 5%;
+    width: 30%;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .button_recherche {
+    margin: 2% 0 2% 5%;
+    width: 100px;
+    height: 30px;
+  }
+
   #entete {
     margin: 10px auto;
     padding-top: 15px;
@@ -102,6 +139,28 @@
 
 
 @media screen and (min-width: 1024px) and (max-width: 1360px) {
+  #content {
+    width: 100%;
+  }
+
+  #form_recherche {
+    margin: 2% auto;
+    width: 50%;
+  }
+
+  .input_recherche {
+    margin: 2% 0 2% 5%;
+    width: 30%;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .button_recherche {
+    margin: 2% 0 2% 5%;
+    width: 100px;
+    height: 30px;
+  }
+
   #entete {
     margin: 10px auto;
     padding-top: 15px;
@@ -160,6 +219,28 @@
 
 
 @media screen and (min-width: 1361px) {
+  #content {
+    width: 100%;
+  }
+
+  #form_recherche {
+    margin: 2% auto;
+    width: 50%;
+  }
+
+  .input_recherche {
+    margin: 2% 0 2% 5%;
+    width: 30%;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .button_recherche {
+    margin: 2% 0 2% 5%;
+    width: 100px;
+    height: 30px;
+  }
+
   #entete {
     margin: 10px auto;
     padding-top: 15px;

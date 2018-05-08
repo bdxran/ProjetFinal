@@ -20,6 +20,12 @@
   background-color: #151515;
   border: 2px solid #151515;
   border-radius: 5px;
+  font-weight: bold;
+  color: #EAEAEA;
+}
+
+.design_button:hover {
+  color: #FF8C00;
 }
 
 .lien_button {
@@ -29,6 +35,10 @@
 
 .lien_button:hover {
   color: #FF8C00;
+}
+
+.input {
+  border: 1px solid #151515;
 }
 
 
@@ -50,7 +60,7 @@
   }
 
   .design_button {
-    width: 100px;
+    width: 150px;
     height: 30px;
   }
 
@@ -60,13 +70,18 @@
 
   .lien_button:hover {
     font-size: 15px;
+  }
+
+  .input {
+    width: 150px;
+    height: 25px;
   }
 }
 
 
 @media screen and (min-width: 1024px) and (max-width: 1360px) {
   #article_window {
-    margin: 2% 0 0 0;
+    margin: 2% 5%;
     width: auto;
   }
 
@@ -82,7 +97,7 @@
   }
 
   .design_button {
-    width: 100px;
+    width: 150px;
     height: 30px;
   }
 
@@ -92,13 +107,18 @@
 
   .lien_button:hover {
     font-size: 15px;
+  }
+
+  .input {
+    width: 150px;
+    height: 25px;
   }
 }
 
 
 @media screen and (min-width: 1361px) {
   #article_window {
-    margin: 2% 0 0 0;
+    margin: 2% 5%;
     width: auto;
   }
 
@@ -114,7 +134,7 @@
   }
 
   .design_button {
-    width: 100px;
+    width: 150px;
     height: 30px;
   }
 
@@ -124,5 +144,10 @@
 
   .lien_button:hover {
     font-size: 15px;
+  }
+
+  .input {
+    width: 150px;
+    height: 25px;
   }
 }

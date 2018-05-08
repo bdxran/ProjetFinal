@@ -68,4 +68,16 @@
 
     return $req;
   }
+
+  function getCommandeAdmin($id) {
+    require_once("include/db.php");
+
+    $bdd = db_connect();
+
+    $req = $bdd->prepare('SELECT o.onum,o.amt,o.odate,oa.quantite,oa.prix,g.nameGame,g.editeur,g.plateform,g.jacket,g.description,u.pseudo FROM Orders AS o, OrdersArticle AS oa, Game AS g, Users AS u WHERE o.onum=oa.onum AND oa.gnum=g.gnum AND u.unum=?
+      AND o.idUser=? ORDER BY o.odate DESC');
+    $req->execute(array($id,$id));
+
+    return $req;
+  }
 ?>
