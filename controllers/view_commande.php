@@ -19,6 +19,7 @@
   }
 
   $req = getCommande($profil['unum']);
+  $onum = 0;
 
   include('views/view_commande.php');
 ?>

@@ -19,43 +19,50 @@
             $passwordlength=strlen($_POST['password']);
 
               if($passwordlength <= 16) {
+                if(!empty($_POST['name'])) {
+                  if(!empty($_POST['firstname'])) {
+                    if(!empty($_POST['mail'])) {
+                      if(!empty($_POST['adress'])) {
+                        if(!empty($_POST['numero'])) {
+                          if(!empty($_POST['code_postal'])) {
+                            if(!empty($_POST['city'])) {
+                              if(!empty($_POST['naissance'])) {
+                                if(!empty($_POST['genre'])) {
+                                  setUser($_POST['pseudo'],$_POST['password'],$_POST['name'],$_POST['firstname'],$_POST['mail'],$_POST['adress'],$_POST['numero'],$_POST['code_postal'],$_POST['city'],$_POST['naissance'],$_POST['genre']);
 
-                if(!empty($_POST['mail'])) {
-                  if(!empty($_POST['adress'])) {
-                    if(!empty($_POST['numero'])) {
-                      if(!empty($_POST['code_postal'])) {
-                        if(!empty($_POST['city'])) {
-                          if(!empty($_POST['naissance'])) {
-                            if(!empty($_POST['genre'])) {
-                              setUser($_POST['pseudo'],$_POST['password'],$_POST['mail'],$_POST['adress'],$_POST['numero'],$_POST['code_postal'],$_POST['city'],$_POST['naissance'],$_POST['genre']);
+                                  session_start();
 
-                              session_start();
+                                  $_SESSION['user'] = $_POST['pseudo'];
 
-                              $_SESSION['user'] = $_POST['pseudo'];
+                                  header('Location: welcome');
 
-                              header('Location: welcome');
-
-                              exit();
+                                  exit();
+                                } else {
+                                  $errMsg = 'Choisissez un genre valide!';
+                                }
+                              } else {
+                                $errMsg = 'Choisissez une date de naissance valide!';
+                              }
                             } else {
-                              $errMsg = 'Choisissez un genre valide!';
+                              $errMsg = 'Rentrez une ville!';
                             }
                           } else {
-                            $errMsg = 'Choisissez une date de naissance valide!';
+                            $errMsg = 'Rentrez un code postal!';
                           }
                         } else {
-                          $errMsg = 'Rentrez une ville!';
+                          $errMsg = 'Rentrez un numéro d\'habitation!';
                         }
                       } else {
-                        $errMsg = 'Rentrez un code postal!';
+                        $errMsg = 'Rentrez le nom de rue, où vous habitez!';
                       }
                     } else {
-                      $errMsg = 'Rentrez un numéro d\'habitation!';
+                      $errMsg = 'Rentrez une adresse mail!';
                     }
                   } else {
-                    $errMsg = 'Rentrez le nom de rue, où vous habitez!';
+                    $errMsg = 'Rentrez votre prénom!';
                   }
                 } else {
-                  $errMsg = 'Rentrez une adresse mail!';
+                  $errMsg = 'Rentrez votre nom!';
                 }
               } else {
                 $errMsg = 'Password est long, taille maximun de 16 caractére!';

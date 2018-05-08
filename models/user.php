@@ -10,15 +10,15 @@
     return $req->fetch();
   }
 
-  function setUser($pseudo, $password, $mail, $adress, $numero, $code_postal, $city, $naissance, $genre) {
+  function setUser($pseudo, $password, $name, $firstname, $mail, $adress, $numero, $code_postal, $city, $naissance, $genre) {
     $password = sha1($password);
 
     require_once("include/db.php");
 
     $bdd = db_connect();
 
-    $req = $bdd->prepare('INSERT INTO Users (pseudo, password, mail, adress, numero, code_postal, city, naissance, genre) VALUES (?,?,?,?,?,?)');
-    $req->execute(array($pseudo,$password,$mail,$adress,$numero,$code_postal,$city,$naissance,$genre));
+    $req = $bdd->prepare('INSERT INTO Users (pseudo, password, name, firstname, mail, adress, numero, code_postal, city, naissance, genre) VALUES (?,?,?,?,?,?,?,?,?,?,?)');
+    $req->execute(array($pseudo,$password,$name,$firstname,$mail,$adress,$numero,$code_postal,$city,$naissance,$genre));
 
     return $req;
   }

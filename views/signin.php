@@ -19,6 +19,12 @@
             <li class="title_list"><span>Mot de passe vérification: </span></li>
             <li class="ligne_list"><input type="password" name="passwordVerif" class="input"/></li>
 
+            <li class="title_list"><span>Nom: </span></li>
+            <li class="ligne_list"><input type="text" name="name" class="input"/></li>
+
+            <li class="title_list"><span>Prénom: </span></li>
+            <li class="ligne_list"><input type="text" name="firstname" class="input"/></li>
+
             <li class="title_list"><span>E-mail: </span></li>
             <li class="ligne_list"><input type="text" name="mail" class="input"/></li>
 
