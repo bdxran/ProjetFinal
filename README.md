@@ -10,9 +10,9 @@ Optimisé pour Chrome.
 Le projet utilise:
 ------------------
 
-Version Apache/2.4.18 (Ubuntu)
-Version MySQL 5.7.22-0ubuntu0.16.04.1
-Version PHP 7.0.28-0ubuntu0.16.04.1 (cli) (NTS)
+- Version Apache/2.4.18 (Ubuntu)
+- Version MySQL 5.7.22-0ubuntu0.16.04.1
+- Version PHP 7.0.28-0ubuntu0.16.04.1 (cli) (NTS)
 
 Installation sur un Ubuntu:
 ---------------------------
