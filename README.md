@@ -100,7 +100,7 @@ Dans phpmyadmin choisissez l'option nouvelle base de données:
 Valeur à modifier:
 ------------------
 
-Dans le fichier db.php qui se trouve dans le dossier models/include/ du projet, veuillez modifier les informations de connection avec les votre dans PDO.
+Dans le fichier db.php qui se trouve dans le dossier models/include/ du projet, veuillez modifier les informations de connection à MySQL avec les votre dans PDO.
 
 Information pratique:
 ---------------------
