@@ -38,18 +38,7 @@
           </li>
           <li class="title_list"><span>Genre :</span></li>
           <li class="title_list"></li>
-          <li class="ligne_list">
-            <select name="genre" class="input">
-              <option value="action">action</option>
-              <option value="aventure">aventure</option>
-              <option value="course automobile">course automobile</option>
-              <option value="gestion">gestion</option>
-              <option value="plateform">plateform</option>
-              <option value="simulation">simulation</option>
-              <option value="role">rôle</option>
-              <option value="tir">tir</option>
-            </select>
-          </li>
+          <li class="ligne_list"><input type="text" name="genre" class="input"/></li>
 
           <li class="title_list"><span>Jacket :</span></li>
           <li class="title_list"></li>
