@@ -35,7 +35,7 @@
       <div id="search">
         <form action="search_article" method="post">
           <input type="image" src="../../css/image/loupe.png" alt="submit" id="buttonSearch"/>
-          <input type="text" name="search" placeholder="Recherche..." id="iSearch"/>
+          <input type="text" name="search" value="" placeholder="Recherche..." id="iSearch"/>
         </form>
       </div>
     </div>

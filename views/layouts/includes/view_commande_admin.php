@@ -10,7 +10,9 @@
 </div>
 <div id="corps">
   <ul>
-    <?php while($result = $req2->fetch()) { ?>
+    <?php
+    if(!empty($_POST['pseudo'])){
+     while($result = $req2->fetch()) { ?>
       <li class="commande">
         <?php if($onum != $result['onum']) {
           $onum = $result['onum'];?>
@@ -28,6 +30,7 @@
           <li class="li_list_commande"><span class="label">Description :</span> <?=$result['description'] ?></li>
         </ul>
       </li>
-    <?php  } ?>
+    <?php  } $req2->closeCursor();
+  } ?>
   </ul>
 </div>

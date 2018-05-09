@@ -29,7 +29,11 @@
     $req = $bdd->prepare('SELECT * FROM Game WHERE gnum = ?');
     $req->execute(array($id));
 
-    return $req->fetch();
+    $info = $req->fetch();
+
+    $req->closeCursor();
+
+    return $info;
   }
 
   function getArticle($gnum) {
@@ -40,7 +44,11 @@
     $req = $bdd->prepare('SELECT * FROM Game WHERE gnum = ?');
     $req->execute(array($gnum));
 
-    return $req->fetch();
+    $info = $req->fetch();
+
+    $req->closeCursor();
+
+    return $info;
   }
 
   function list_article($nameGame,$plateform) {
@@ -51,7 +59,11 @@
     $req = $bdd->prepare('SELECT nameGame FROM Game WHERE nameGame = ? AND plateform = ?');
     $req->execute(array($nameGame,$plateform));
 
-		return $req->fetch();
+    $info = $req->fetch();
+
+    $req->closeCursor();
+
+    return $info;
   }
 
   function del($nameGame,$plateform) {

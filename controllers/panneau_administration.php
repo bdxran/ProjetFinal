@@ -23,7 +23,7 @@
       $info = $req2['nameGame']."|".$result['mycount'];
 
       array_push($resultat, $info);
-    }
+    } $req->closeCursor();
 
     include('views/panneau_administration.php');
   } else {

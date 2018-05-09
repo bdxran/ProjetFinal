@@ -21,6 +21,6 @@
           <li class="li_list_commande"><span class="label">Description :</span> <?=$result['description'] ?></li>
         </ul>
       </li>
-    <?php  } ?>
+    <?php  } $req->closeCursor(); ?>
   </ul>
 </div>

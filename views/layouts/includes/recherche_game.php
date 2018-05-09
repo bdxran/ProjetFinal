@@ -9,7 +9,7 @@
     <?php if($affiche == true) {
       while($result = $req->fetch()) {
         echo '<li class="li_list_recherche"><form action="modifie" method="post"><input type="hidden" name="id" value='.$result['gnum'].'/><input type="image" src='.$repertoire.$result['jacket'].' class="img_list"><label class="label_list_recherche">'.$result['nameGame'].'</label></form></li>';
-      }
+      } $req->closeCursor();
     } ?>
   </ul>
 </div>

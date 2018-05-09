@@ -116,7 +116,11 @@
         $req = $bdd->prepare('SELECT onum FROM Orders ORDER BY onum DESC');
         $req->execute();
 
-        return $req->fetch();
+        $info = $req->fetch();
+
+        $req->closeCursor();
+
+        return $info;
       }
 
       function commande_article($onum,$session) {

@@ -62,6 +62,10 @@
 
     $req->execute(array($pseudo));
 
-    return $repertoire_icon.$req->fetch();
+    $info = $repertoire_icon.$req->fetch();
+
+    $req->closeCursor();
+
+    return $info;
   }
  ?>

@@ -22,7 +22,7 @@
     if(!empty($_POST['search'])) {
       $req = recherche_game($_POST['search'],$_POST['plateform']);
     } else {
-      $errMsg = "Veuillez entrée une valeur de recherche";
+      $errMsg = "Aucune recherche!";
     }
   }
 

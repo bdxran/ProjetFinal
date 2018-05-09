@@ -14,6 +14,6 @@
             <label class="label_list_recherche"><?=$result['nameGame']?></label>
           </form>
         </li>
-    <?php  } ?>
+    <?php  } $req->closeCursor(); ?>
   </ul>
 </div>

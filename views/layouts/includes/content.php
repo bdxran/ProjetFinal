@@ -28,7 +28,7 @@
               }
 
               $i++;
-            }
+            } $req->closeCursor();
            ?>
         </ul>
       </section>
@@ -53,7 +53,7 @@
               }
 
               $i++;
-            }
+            } $req->closeCursor();
            ?>
         </ul>
       </section>
@@ -78,7 +78,7 @@
               }
 
               $i++;
-            }
+            } $req->closeCursor();
            ?>
         </ul>
       </section>
@@ -103,7 +103,7 @@
               }
 
               $i++;
-            }
+            } $req->closeCursor();
            ?>
         </ul>
       </section>

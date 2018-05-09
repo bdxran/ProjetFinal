@@ -7,7 +7,11 @@
     $req = $bdd->prepare('SELECT * FROM Users WHERE pseudo = ?');
     $req->execute(array($pseudo));
 
-    return $req->fetch();
+    $info = $req->fetch();
+
+    $req->closeCursor();
+
+    return $info;
   }
 
   function setUser($pseudo, $password, $name, $firstname, $mail, $adress, $numero, $code_postal, $city, $naissance, $genre) {

@@ -7,6 +7,7 @@
   </form>
   <ul id="list_recherche">
     <?php
+    if(!empty($_POST['search'])){
       while($result = $req->fetch()) {
         echo '<li class="li_list_recherche">
           <form action="detail" method="post"><input type="hidden" name="id" value='.$result['gnum'].'/>
@@ -14,6 +15,7 @@
             <label class="label_list_recherche">'.$result['nameGame'].'</label>
           </form>
         </li>';
-      } ?>
+      } $req->closeCursor();
+    } ?>
   </ul>
 </div>

@@ -6,6 +6,15 @@
 
   $verif = false;
   $verif2 = false;
+  $repertoire_icon = "css/image/icon/";
+
+  if(!empty($_SESSION['admin'])){
+    $profil = getUser($_SESSION['admin']);
+  } elseif(!empty($_SESSION['user'])) {
+    $profil = getUser($_SESSION['user']);
+  } else {
+    $profil['icon'] = "icon.png";
+  }
 
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!empty($_SESSION['admin'])){
@@ -28,10 +37,10 @@
 
     del_panier();
 
-    header('Location: welcome');
+    include('views/confirm.php');
   } else {
     $errMsg = "Erreur commande pas valide!";
 
-    header('Location: welcome');
+    include('views/confirm.php');
   }
  ?>

@@ -1,0 +1,29 @@
+#commande {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1023px) {
+  #commande {
+    margin: 400px auto;
+    width: 80%;
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1360px) {
+  #commande {
+    margin: 400px auto;
+    width: 24%;
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (min-width: 1361px) {
+  #commande {
+    margin: 400px auto;
+    width: 24%;
+    font-size: 30px;
+  }
+}
