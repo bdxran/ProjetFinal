@@ -28,6 +28,7 @@ Installation:
   Et dans ce fichier ajouter ces information et sauvegarder:
 
   <VirtualHost *:80>
+
           ServerAdmin votreadressemail
           ServerName Ultra_Gaming.local
           ServerAlias www.Ultra_Gaming.local
