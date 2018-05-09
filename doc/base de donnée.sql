@@ -72,7 +72,8 @@ CREATE TABLE Users (
 -- --------------------------
 
 INSERT INTO Users (unum, icon, pseudo, `password`, `name`, firstname, mail, adress, numero, code_postal, city, naissance, grade, genre) VALUES
-(1, 'icon.png', 'bdxran', '4f0aa52d656a3d75867f784b7e9c5d23bf1321c0', 'Blondiaux', 'Randy', 'bdxran@hotmail.be', 'Rue de Maubeuge', 12, 7130, 'Binche', '1993-03-01', 'admin','homme');
+(1, 'icon.png', 'bdxran', '4f0aa52d656a3d75867f784b7e9c5d23bf1321c0', 'Blondiaux', 'Randy', 'bdxran@hotmail.be', 'Rue de Maubeuge', 12, 7130, 'Binche', '1993-03-01', 'admin','homme'),
+(2, 'icon.png', 'sicile64', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'Costa', 'Francesco', 'sicile64@gmail.com', 'zazf', 5, 6000, 'La Louvière', '1995-09-06', 'user', 'homme');
 
 -- Structure table Orders:
 -- -------------------------
@@ -85,6 +86,15 @@ CREATE TABLE Orders (
 	odate DATE NOT NULL
 )ENGINE=INNODB DEFAULT CHARSET=latin1;
 
+-- Contenu de la table `Orders`
+-- ---------------------------
+
+INSERT INTO `Orders` (`onum`, `idUser`, `amt`, `odate`) VALUES
+(1, 2, '59.99', '2018-05-09'),
+(2, 2, '119.98', '2018-05-09'),
+(3, 1, '59.99', '2018-05-09'),
+(4, 1, '119.98', '2018-05-09');
+
 -- Structure table OrdersArticle:
 -- ------------------------------
 
@@ -96,3 +106,13 @@ CREATE TABLE OrdersArticle (
 	quantite INT(11) NOT NULL,
 	prix DECIMAL(10,2) NOT NULL
 )ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+-- Contenu de la table `OrdersArticle`
+-- -----------------------------------
+
+INSERT INTO `OrdersArticle` (`oanum`, `onum`, `gnum`, `quantite`, `prix`) VALUES
+(1, 1, 4, 1, '59.99'),
+(2, 2, 9, 1, '59.99'),
+(3, 2, 10, 1, '59.99'),
+(4, 3, 13, 1, '59.99'),
+(5, 4, 2, 2, '59.99');
