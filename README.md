@@ -27,8 +27,8 @@ Installation sur un Ubuntu:
 
   Et dans ce fichier ajouter ces information et sauvegarder:
 
-  <VirtualHost *:80>
-
+          <VirtualHost *:80>
+  
           ServerAdmin votreadressemail
           ServerName Ultra_Gaming.local
           ServerAlias www.Ultra_Gaming.local
@@ -65,8 +65,8 @@ Installation sur un Ubuntu:
           Deny from all
           Allow from 127.0.0.0/255.0.0.0 ::1/128
       </Directory>
-
-  </VirtualHost>
+      
+      </VirtualHost>
 
 - Ensuite dans le terminal executer cette commande :
 
